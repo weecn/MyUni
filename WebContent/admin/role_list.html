@@ -1,0 +1,145 @@
+
+<html>
+<head>
+<title>角色列表</title>
+		<link rel="stylesheet" type="text/css" title="xp"
+			href="../css/skins/xp/validator/component.css" />
+		<link rel="stylesheet" type="text/css" title="xp"
+			href="../css/skins/xp/navbar/nav.css" />
+		<link rel="stylesheet" type="text/css" title="xp"
+			href="../css/skins/xp/table/skin.css" />
+		<link rel="stylesheet" type="text/css" title="xp"
+			href="../css/skins/xp/time/skin.css" />
+
+
+		<style type="text/css">
+<!--
+a:link {
+	text-decoration: none;
+	color: #000000;
+	font-size: 9pt;
+	font-family: 宋体;
+}
+a:visited {
+	text-decoration: none;
+	color: #000000;
+	font-size: 9pt;
+	font-family: 宋体;
+	
+}
+a:hover {
+	text-decoration: none;
+	color: #000000;
+	font-size: 9pt;
+	font-family: 宋体;
+
+}
+a:active {
+	text-decoration: none;
+	color: #000000;
+	font-size: 9pt;
+	font-family: 宋体;
+}
+-->
+</style>
+
+		<script language="JavaScript">
+<!--
+function display(id) {
+
+ eval("var div=div"+id);
+ eval("var img=img"+id);
+ eval("var im=im"+id);
+ div.style.display=div.style.display=="block"?"none":"block";
+ img.src=div.style.display=="block"?"../images/minus.gif":"../images/plus.gif";
+ im.src=div.style.display=="block"?"../images/openfold.gif":"../images/closedfold.gif";
+ img.alt=div.style.display=="block"?"关闭":"展开";
+}
+//-->
+</script>
+<style type="text/css">
+body,table,td,select,textarea,input {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+}
+</style>
+</head>
+<body>
+<div id="main">
+<table class="standard">
+	<thead>
+		<tr>
+			<th align="center" colspan="2" >角色列表</th>
+			
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td align="left">
+</td>
+			<td align="left">
+			
+			<div align="left">
+						<img alt="展开" style="cursor:hand;" onClick="display('1');"
+							id="img1" src="../images/plus.gif">
+						<img id="im1" src="../images/closedfold.gif">
+						<a href="role_add.html" target="add">超级管理员</a>&nbsp;&nbsp;<a href ="role_permission_modify.html" target="add">角色权限</a>
+						<div style="display:none;" id="div1">
+							<div>
+								<img src="../images/white.gif">
+								<img alt="展开" style="cursor:hand;" onClick="display('2');"
+									id="img2" src="../images/plus.gif">
+								<img id="im2" src="../images/closedfold.gif">
+								<a href="role_add.html" target="add">球类管理员A</a>
+								<div style="display:none;" id="div2">
+									<div>
+										<img src="../images/white.gif">
+										<img src="../images/white.gif">
+										<img alt="展开" style="cursor:hand;" onClick="display('3');"
+											id="img3" src="../images/plus.gif">
+										<img id="im3" src="../images/closedfold.gif">
+										<a href="role_add.html" target="add">小球(网、羽毛、乒乓)总版主A</a>
+										<div style="display:none;" id="div3">
+											<div>
+												<img src="../images/white.gif">
+												<img src="../images/white.gif">
+												<img src="../images/white.gif">
+												<img src="../images/minus.gif">
+												<img src="../images/openfold.gif">
+												<a href="role_add.html" target="add">网球录入人员</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div>
+								<img src="../images/white.gif">
+								<img src="../images/minus.gif">
+								<img src="../images/openfold.gif">
+								<a href="role_add.html" target="add">水上运动管理员B </a>
+							</div>
+							<div>
+								<img src="../images/white.gif">
+								<img src="../images/minus.gif">
+								<img src="../images/openfold.gif">
+								<a href="role_add.html" target="add">田径类管理员C</a>
+							</div>
+						</div>
+					</div>
+			
+			
+			
+			</td>
+		</tr>
+
+	</tbody>
+	<tfoot>
+		<tr>
+			<td colspan="2" style="text-align: left"></td>
+
+		</tr>
+	</tfoot>
+</table>
+</div>
+</body>
+</html>

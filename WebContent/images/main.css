@@ -1,0 +1,123 @@
+BODY {
+	BACKGROUND: url(../gfx/gradient_background.gif) #ffffff repeat-x left top; MARGIN: 0px
+}
+BODY {
+	FONT-SIZE: 9pt; FONT-FAMILY: verdana, arial, sans-serif
+}
+TD {
+	FONT-SIZE: 9pt; FONT-FAMILY: verdana, arial, sans-serif
+}
+INPUT {
+	FONT-SIZE: 9pt; FONT-FAMILY: verdana, arial, sans-serif
+}
+TEXTAREA {
+	FONT-SIZE: 9pt; FONT-FAMILY: verdana, arial, sans-serif
+}
+SELECT {
+	FONT-SIZE: 9pt; FONT-FAMILY: verdana, arial, sans-serif
+}
+BUTTON {
+	FONT-SIZE: 9pt; FONT-FAMILY: verdana, arial, sans-serif
+}
+INPUT {
+	BORDER-RIGHT: #357bc4 1px solid; PADDING-RIGHT: 2px; BORDER-TOP: #357bc4 1px solid; PADDING-LEFT: 2px; PADDING-BOTTOM: 1px; BORDER-LEFT: #357bc4 1px solid; PADDING-TOP: 1px; BORDER-BOTTOM: #357bc4 1px solid; BACKGROUND-COLOR: #ffffff
+}
+TEXTAREA {
+	BORDER-RIGHT: #357bc4 1px solid; PADDING-RIGHT: 2px; BORDER-TOP: #357bc4 1px solid; PADDING-LEFT: 2px; PADDING-BOTTOM: 1px; BORDER-LEFT: #357bc4 1px solid; PADDING-TOP: 1px; BORDER-BOTTOM: #357bc4 1px solid; BACKGROUND-COLOR: #ffffff
+}
+SELECT {
+	BORDER-RIGHT: #357bc4 1px solid; PADDING-RIGHT: 2px; BORDER-TOP: #357bc4 1px solid; PADDING-LEFT: 2px; PADDING-BOTTOM: 1px; BORDER-LEFT: #357bc4 1px solid; PADDING-TOP: 1px; BORDER-BOTTOM: #357bc4 1px solid; BACKGROUND-COLOR: #ffffff
+}
+INPUT.checkbox {
+	BORDER-RIGHT: 0px; BORDER-TOP: 0px; BORDER-LEFT: 0px; BORDER-BOTTOM: 0px; BACKGROUND-COLOR: transparent
+}
+BUTTON {
+	BORDER-RIGHT: #357bc4 1px solid; BORDER-TOP: #357bc4 1px solid; BORDER-LEFT: #357bc4 1px solid; BORDER-BOTTOM: #357bc4 1px solid; BACKGROUND-COLOR: #ffffff
+}
+HR {
+	BORDER-RIGHT: #000000 1px solid; BORDER-TOP: #000000 1px solid; BORDER-LEFT: #000000 1px solid; COLOR: #000000; BORDER-BOTTOM: #000000 1px solid; HEIGHT: 1px; BACKGROUND-COLOR: #000000
+}
+A {
+	COLOR: #357bc4
+}
+A:hover {
+	COLOR: #000000
+}
+TD.navbar_1 {
+	BORDER-RIGHT: #357bc4 0px solid; PADDING-RIGHT: 2px; PADDING-LEFT: 2px; FONT-SIZE: 8pt; PADDING-BOTTOM: 2px; BORDER-LEFT: #357bc4 1px solid; COLOR: #357bc4; PADDING-TOP: 2px; BORDER-BOTTOM: #357bc4 2px solid; BORDER-COLLAPSE: collapse; BACKGROUND-COLOR: #ffffff
+}
+TD.navbar_2 {
+	BORDER-RIGHT: #357bc4 0px solid; PADDING-RIGHT: 2px; PADDING-LEFT: 2px; FONT-SIZE: 8pt; BACKGROUND: url(../gfx/tab_gradient.gif) #ffffff repeat-x left bottom; PADDING-BOTTOM: 2px; BORDER-LEFT: #357bc4 1px solid; COLOR: #000000; PADDING-TOP: 2px; BORDER-BOTTOM: #357bc4 2px solid; BORDER-COLLAPSE: collapse
+}
+.dropdown {
+	BORDER-RIGHT: #c5dae7 1px solid; PADDING-RIGHT: 2px; BORDER-TOP: 0px; PADDING-LEFT: 2px; FONT-SIZE: 8pt; PADDING-BOTTOM: 2px; BORDER-LEFT: #c5dae7 1px solid; COLOR: #4c7c9b; PADDING-TOP: 2px; BORDER-BOTTOM: #c5dae7 1px solid; BACKGROUND-COLOR: #d9e6ee
+}
+.dropdown_over {
+	BORDER-RIGHT: #c5dae7 1px solid; PADDING-RIGHT: 2px; BORDER-TOP: 0px; PADDING-LEFT: 2px; FONT-SIZE: 8pt; PADDING-BOTTOM: 2px; BORDER-LEFT: #c5dae7 1px solid; COLOR: #4c7c9b; PADDING-TOP: 2px; BORDER-BOTTOM: #c5dae7 1px solid; BACKGROUND-COLOR: #c5dae7
+}
+.dropdown_holder {
+	Z-INDEX: 5; POSITION: absolute; TOP: 159px
+}
+.tabs {
+	BACKGROUND: url(../gfx/darkborder.gif) #c5dae7 repeat-x left top
+}
+.notab {
+	WIDTH: 12px; BORDER-BOTTOM: black 1px solid
+}
+.tab {
+	BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 5px; BORDER-TOP: black 1px solid; PADDING-LEFT: 5px; PADDING-BOTTOM: 5px; BORDER-LEFT: black 1px solid; WIDTH: 100px; CURSOR: pointer; PADDING-TOP: 5px; BORDER-BOTTOM: black 1px solid; BACKGROUND-COLOR: #8dbff4
+}
+.tab_over {
+	BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 5px; BORDER-TOP: black 1px solid; PADDING-LEFT: 5px; FONT-WEIGHT: bold; PADDING-BOTTOM: 5px; BORDER-LEFT: black 1px solid; WIDTH: 100px; CURSOR: pointer; PADDING-TOP: 5px; BACKGROUND-COLOR: #ffffff
+}
+TABLE.itemlist {
+	BORDER-TOP: #d9e6ee 1px solid
+}
+TD.itemlist_alt0 {
+	PADDING-RIGHT: 2px; BORDER-TOP: #ffffff 1px solid; PADDING-LEFT: 2px; BACKGROUND: url(../gfx/gradient2_alt0.gif) #ffffff repeat-x left top; PADDING-BOTTOM: 2px; PADDING-TOP: 2px; BORDER-BOTTOM: #c5dae7 1px solid
+}
+TD.itemlist_alt1 {
+	PADDING-RIGHT: 2px; BORDER-TOP: #7ed3fc 1px solid; PADDING-LEFT: 2px; BACKGROUND: url(../gfx/gradient2_alt1.gif) #7ed3fc repeat-x left top; PADDING-BOTTOM: 2px; PADDING-TOP: 2px; BORDER-BOTTOM: #579fe9 1px solid
+}
+.subtext {
+	FONT-SIZE: 7pt; COLOR: #2c6cae
+}
+.competition {
+	FONT-WEIGHT: bold; FONT-SIZE: 14pt; COLOR: #2c6cae
+}
+.content_title {
+	FONT-WEIGHT: bold; FONT-SIZE: 12pt; COLOR: #2c6cae
+}
+.content_intro {
+	FONT-SIZE: 9pt; FONT-STYLE: italic
+}
+.content {
+	FONT-SIZE: 9pt
+}
+IMG.thumbnail_xs {
+	BORDER-RIGHT: #000000 1px solid; BORDER-TOP: #000000 1px solid; MARGIN: 2px; BORDER-LEFT: #000000 1px solid; CURSOR: pointer; BORDER-BOTTOM: #000000 1px solid
+}
+IMG.thumbnail_s {
+	BORDER-RIGHT: #000000 1px solid; BORDER-TOP: #000000 1px solid; MARGIN: 1px; BORDER-LEFT: #000000 1px solid; CURSOR: pointer; BORDER-BOTTOM: #000000 1px solid
+}
+TD.paginate_page {
+	BORDER-RIGHT: #000000 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: #000000 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 1px; BORDER-LEFT: #000000 1px solid; PADDING-TOP: 1px; BORDER-BOTTOM: #000000 1px solid; BACKGROUND-COLOR: #ffffff
+}
+TD.paginate_curpage {
+	BORDER-RIGHT: #2c6cae 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: #2c6cae 1px solid; PADDING-LEFT: 3px; BACKGROUND: url(../gfx/gradient2_alt0.gif) #ffffff repeat-x left top; PADDING-BOTTOM: 1px; BORDER-LEFT: #2c6cae 1px solid; COLOR: #2c6cae; PADDING-TOP: 1px; BORDER-BOTTOM: #2c6cae 1px solid
+}
+A.paginate_pagelink {
+	COLOR: #000000; TEXT-DECORATION: none
+}
+A.paginate_pagelink:hover {
+	COLOR: #4189d3; TEXT-DECORATION: none
+}
+TD.paginate_stats {
+	FONT-SIZE: 8pt; COLOR: #4189d3; TEXT-ALIGN: center
+}
+TD.paginate_noitems {
+	COLOR: #4189d3; TEXT-ALIGN: center
+}
+TD.darkborder {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; BACKGROUND: url(../gfx/darkborder.gif) #55c6fb repeat-x left top; PADDING-BOTTOM: 0px; PADDING-TOP: 0px
+}

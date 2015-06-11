@@ -1,0 +1,169 @@
+
+<html>
+	<head>
+		<title>programme_delete</title>
+		<link rel="stylesheet" type="text/css" title="xp"
+			href="../css/skins/xp/validator/component.css" />
+		<script type="text/javascript"
+			src="..//jscript/validator/form_validator.js" /></script>
+		<script type="text/javascript">
+
+		function submitForm(obj) {	
+		
+				if (document.forms[0].submit) {		
+					document.forms[0].submit.disabled = true;		
+				}		
+		}
+</script>
+		<style type="text/css">
+body,table,td,select,textarea,input {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+}
+</style>
+	</head>
+	<body>
+		<div id="main">
+
+
+			<form name="programmeform" method="post" action="" onSubmit=''>
+				<table class="standard">
+					<thead>
+						<tr>
+							<th align="left">
+								title
+							</th>
+							<th align="left">
+								value
+							</th>
+						</tr>
+					</thead>
+					<tbody>
+
+						<tr>
+							<td align="left">
+								name
+							</td>
+							<td align="left">
+								<div class="Info">
+									<div id="name_info"></div>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td align="left">
+								match
+							</td>
+							<td align="left">
+
+								<div class="Info">
+									<div id="pmatch_info">
+										</dive>
+									</div>
+							</td>
+						</tr>
+						<tr>
+							<td align="left">
+								tool
+							</td>
+							<td align="left">
+								<div class="Info">
+									<div id="tool_info"></div>
+								</div>
+							</td>
+						</tr>
+
+						<tr>
+							<td align="left">
+								insert date
+							</td>
+							<td align="left">
+								yyyy-MM-dd HH:mm
+								<div class="Info">
+									<div id="start_info"></div>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td align="left">
+								modify date
+							</td>
+							<td align="left">
+								yyyy-MM-dd HH:mm:ss
+								<div class="Info">
+									<div id="end_info"></div>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td align="left">
+								language
+							</td>
+							<td align="left">
+								<div class="Info">
+									<div id="language_info"></div>
+								</div>
+							</td>
+						</tr>
+
+						<tr>
+							<td align="left">
+								prior
+							</td>
+							<td align="left">
+								<div class="Info">
+									<div id="prior_info"></div>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td align="left">
+								valid
+							</td>
+							<td align="left">
+								<div class="Info">
+									<div id="valid_info"></div>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td align="left">
+								url
+							</td>
+							<td align="left">
+								<div class="Info">
+									<div id="url_info"></div>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td align="left">
+								type
+							</td>
+							<td align="left">
+								<div class="Info">
+									<div id="type_info"></div>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td colspan="2" align="center">
+								<input class="submitButton" type="submit" TABINDEX="11"
+									name="submit" value="submit">
+								<input class="submitButton" type="button" name="back"
+									value="back" onclick="history.back(-1);" />
+							</td>
+						</tr>
+
+					</tbody>
+					<tfoot>
+						<tr>
+							<td colspan="2" style="text-align: left"></td>
+
+						</tr>
+					</tfoot>
+				</table>
+			</form>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,111 @@
+<html>
+<head>
+<title>nation</title>
+<style type="text/css">
+body,table,td,select,textarea,input {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+}
+</style>
+		<link rel="stylesheet" type="text/css" title="xp"
+			href="../css/skins/xp/validator/component.css" />
+		<link rel="stylesheet" type="text/css" title="xp"
+			href="../css/skins/xp/navbar/nav.css" />
+		<link rel="stylesheet" type="text/css" title="xp"
+			href="../css/skins/xp/table/skin.css" />
+		<link rel="stylesheet" type="text/css" title="xp"
+			href="../css/skins/xp/time/skin.css" />
+		<script type="text/javascript" src="../jscript/time/calendar.js"></script>
+		<script type="text/javascript" src="../jscript/time/calendar-zh.js"></script>
+		<script type="text/javascript" src="../jscript/time/calendar-setup.js"></script>
+		<script type="text/javascript" src="../jscript/common.js"></script>
+
+</head>
+<body>
+<div id="main">
+<form  method="post"
+	action="">
+<table class="sadminheading" style="top-margin: 10">
+	<tr>
+		<td nowrap class="admintitle" colspan="4" align="center">国家列表</td>
+	</tr>
+
+	<tr>
+	    <td align="left">国家名称:</td>
+	    <td align="left"><input name="name" type="text" /></td>
+		<td align="left">国家简称:</td>
+		<td align="left"><input name="name" type="text" /></td>
+
+	</tr>
+	<tr>
+		<td align="left">&nbsp;</td>
+		<td align="left">&nbsp;</td>
+		<td align="left">&nbsp;</td>
+		<td align="right"><input type="submit" name="提交" value="提交"/>&nbsp;&nbsp;&nbsp;
+			<input type="hidden" name="pagenum" value="" />
+	<input type="hidden" name="pagerows" value="" /></td>
+	</tr>
+
+
+</table>
+</form>
+<table class="standard">
+	<thead>
+		<tr>
+			<th>id</th>
+			<th>国家名字</th>
+			<th>国家简称</th>
+			<th>图标</th>
+			<th>简介</th>
+			<th>优先级别</th>
+			<th>&nbsp;</th>
+		</tr>
+	</thead>
+	<tbody>
+				<tr>
+				     <td>1</td>
+					<td>美国</td>
+					<td>US</td>
+					<td><img src="../images/us.gif"/></td>
+					<td>民主国家</td>
+					<td>1</td>
+					<td>
+						<a href='#' onclick="location.href='nation_update.html';">修改</a>
+							<a href='#' onclick="if(confirm('delete')) location.href='nation_list.html?id=1';">删除</a>
+					
+					 </td>
+                   
+				</tr>
+			<tr>
+				<td colspan="7">No data found</td>
+			</tr>
+
+	</tbody>
+	<tfoot>
+					<tr>
+						<td colspan="3" style="text-align: left">
+							1/1 total rows 1
+						</td>
+						<td colspan="4" align="right">
+							<a href="#"
+								onclick="turn(document.forms[0],'first',1,1,'jump page');">first</a>
+							<a href="#"
+								onclick="turn(document.forms[0],'prev', 1,1,'jump page');">prev</a>
+
+							<a href="#"
+								onclick="turn(document.forms[0],'next',1,1,'jump page');">next</a>
+							<a href="#"
+								onclick="turn(document.forms[0],'last',1,1,'jump page');">last</a>
+
+
+							go
+							<input type="text" name="cpage" size="5" id="jumpto" />
+							<a href="#"
+								onclick="turn(document.forms[0],'jump',1,1,'jump page');">go</a>
+						</td>
+					</tr>
+	</tfoot>
+</table>
+</div>
+</body>
+</html>

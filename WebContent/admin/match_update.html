@@ -1,0 +1,202 @@
+<html>
+	<head>
+		<title>match_update</title>
+		<link rel="stylesheet" type="text/css" title="xp"
+			href="../css/skins/xp/validator/component.css" />
+		<link rel="stylesheet" type="text/css" title="xp"
+			href="../css/skins/xp/navbar/nav.css" />
+		<link rel="stylesheet" type="text/css" title="xp"
+			href="../css/skins/xp/table/skin.css" />
+		<link rel="stylesheet" type="text/css" title="xp"
+			href="../css/skins/xp/time/skin.css" />
+		<script type="text/javascript" src="../jscript/time/calendar.js"></script>
+		<script type="text/javascript" src="../jscript/time/calendar-zh.js"></script>
+		<script type="text/javascript" src="../jscript/time/calendar-setup.js"></script>
+		<script type="text/javascript" src="../jscript/common.js"></script>
+		<script type="text/javascript">
+		var validatedInfo		= "correct";
+		var requireErrorInfo	= "required<br/>";
+		var msgInfo	= new Array();
+		
+		msgInfo[0]				= new Array('name required','name error');
+		var name				= new formEle(true,"no",null,"name_info",msgInfo[0]);
+	
+	   	msgInfo[0]				= new Array('description required','description error');
+		var description			= new formEle(true,"no",null,"description_info",msgInfo[0]);
+
+
+		msgInfo[0]				= new Array('event1 required','event1 error');
+		var event1				= new formEle(true,"no",null,"event1_info",msgInfo[0]);
+		
+		msgInfo[0]				= new Array('idate required','idate error');
+	    var start				= new formEle(true,"no",null,"start_info",msgInfo[0]);		
+	    
+		msgInfo[0]				= new Array('mdate required','mdate error');
+	    var end				    = new formEle(true,"no",null,"end_info",msgInfo[0]);	
+		msgInfo[0]				= new Array('versus1 required','versus1 error');
+	    var versus1 			= new formEle(false,"no",null,"versus1_info",msgInfo[0]);	
+	    
+		msgInfo[0]				= new Array('versus2 required','versus2 error');
+	    var versus2			    = new formEle(false,"no",null,"versus2_info",msgInfo[0]);	
+	    	
+		function submitForm(obj) {	
+		
+			var ret = validateAll(obj);			
+			if (ret == true) {		 
+				if (document.forms[0].submit) {		
+					document.forms[0].submit.disabled = true;		
+				}		
+			}		
+			return ret;		
+		}
+</script>
+		<style type="text/css">
+body,table,td,select,textarea,input {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+}
+</style>
+	</head>
+	<body>
+		<div id="main">
+
+
+			<form method="post" action=""
+				onSubmit='return submitForm(document.forms[0]);'>
+				<table class="standard">
+					<thead>
+						<tr>
+							<th align="center" colspan="2">
+							 比赛修改
+							</th>
+						</tr>
+					</thead>
+					<tbody>
+
+						<tr>
+							<td align="left">
+								比赛名称
+							</td>
+							<td align="left">
+								<input name="name" type="text" TABINDEX="1" value="pmatch.name"
+									id="name" />
+								<div class="Info">
+									<div id="name_info"></div>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td align="left">
+								描述
+							</td>
+							<td align="left">
+								<input name="description" type="text" value="pmatch.description"
+									TABINDEX="2" id="description" />
+								<div class="Info">
+									<div id="description_info"></div>
+								</div>
+							</td>
+						</tr>
+
+						<tr>
+							<td align="left">
+								赛事名称
+							</td>
+							<td align="left">
+								<select name="event1" TABINDEX="3" id="event1">
+
+									<option value='event.id'>
+										中国网球公开赛
+									</option>
+
+								</select>
+								<div class="Info">
+									<div id="event1_info">
+									</div>
+								</div>
+							</td>
+						</tr>
+
+						<tr>
+							<td align="left">
+								比赛开始时间
+							</td>
+							<td align="left">
+
+								<input name="start" type="text" TABINDEX="4"
+									value="yyyy- d HH:mm" id="start" />
+								<div class="Info">
+									<div id="start_info"></div>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td align="left">
+								比赛的结束时间
+							</td>
+							<td align="left">
+								<input name="end" type="text" TABINDEX="5"
+									value="yyyy-MM-dd HH:mm" id="end" />
+								<div class="Info">
+									<div id="end_info"></div>
+								</div>
+							</td>
+						</tr>
+					<tr>
+							<td align="left">
+								参赛队
+							</td>
+							<td align="left">
+								<input name="versus1" type="text" TABINDEX="7"
+									value=pmatch.versus1.id " id="versus1" />
+								&nbsp;&nbsp;&nbsp;
+								<a href="#"
+									onclick="window.open('admin/team_list.html')">
+									search</a>
+								<div class="Info">
+									<div id="versus1_info"></div>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td align="left">
+								 参赛队
+							</td>
+							<td align="left">
+								<input name="versus2" type="text" TABINDEX="8"
+									value="pmatch.versus2.id" id="versus2" />
+								&nbsp;&nbsp;&nbsp;
+								<a href="#" onclick="window.open('admin/team_list.html")">
+									search</a>
+								<div class="Info">
+									<div id="versus2_info"></div>
+								</div>
+							</td>
+						</tr>
+						<tr>
+
+							<td colspan="2" align="center">
+								<input class="submitButton" type="submit" TABINDEX="11"
+									name="submit" value="update">
+								&nbsp;
+								<input class="submitButton" type="button" name="back"
+									value="back" onclick="history.back(-1);" />
+
+							</td>
+						</tr>
+
+					</tbody>
+					<tfoot>
+						<tr>
+							<td colspan="2" style="text-align: left">
+								<script type="text/javascript"
+									src="../jscript/time/timesetup.js"></script>
+							</td>
+
+						</tr>
+					</tfoot>
+				</table>
+			</form>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,98 @@
+<html>
+<head>
+<title>nation_delete</title>
+		<link rel="stylesheet" type="text/css" title="xp"
+			href="../css/skins/xp/validator/component.css" />
+		<link rel="stylesheet" type="text/css" title="xp"
+			href="../css/skins/xp/navbar/nav.css" />
+		<link rel="stylesheet" type="text/css" title="xp"
+			href="../css/skins/xp/table/skin.css" />
+		<link rel="stylesheet" type="text/css" title="xp"
+			href="../css/skins/xp/time/skin.css" />
+		<script type="text/javascript" src="../jscript/time/calendar.js"></script>
+		<script type="text/javascript" src="../jscript/time/calendar-zh.js"></script>
+		<script type="text/javascript" src="../jscript/time/calendar-setup.js"></script>
+		<script type="text/javascript" src="../jscript/common.js"></script>
+
+
+<script type="text/javascript">
+	
+		function submitForm(obj) {	
+		if(confirm("Are sure to delete?")){
+				if (document.forms[0].submit) {		
+					document.forms[0].submit.disabled = true;		
+				}		
+		}else{
+		return false
+		}
+		}
+		
+
+</script>
+<style type="text/css">
+body,table,td,select,textarea,input {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+}
+</style>
+</head>
+<body>
+<div id="main">
+
+
+<form name="adform" method="post"
+	action="../admin/nation.do?method=deleted"
+	onSubmit='return submitForm(document.forms[0]);'>
+<table class="standard">
+	<thead>
+		<tr>
+			<th align="left">title</th>
+			<th align="left">value</th>
+		</tr>
+	</thead>
+	<tbody>
+
+			<tr>
+			<td align="left">name</td>
+			<td align="left">nation.name
+			</td>
+		</tr>
+		<tr>
+			<td align="left">icon</td>
+			<td align="left">nation.icon
+			</td>
+		</tr>
+	   <tr>
+			<td align="left">language</td>
+			<td align="left">nation.language
+			</td>
+		</tr>	
+		<tr>
+			<td align="left">description</td>
+			<td align="left">nation.description=
+			</td>
+		</tr>	
+		<tr>
+			<td align="left">prior</td>
+			<td align="left">nation.prior
+			</td>
+		</tr>	
+		<tr>
+			<td colspan="2" align="center">
+			   
+			    <input class="submitButton" type="submit" TABINDEX="12" name="submit" value="delete">&nbsp;
+				<input class="submitButton" type="button" name="back"   value="back" onclick="history.back(-1);"></td>
+		</tr>
+
+	</tbody>
+	<tfoot>
+		<tr>
+			<td colspan="2" style="text-align: left"></td>
+
+		</tr>
+	</tfoot>
+</table>
+</form>
+</div>
+</body>
+</html>

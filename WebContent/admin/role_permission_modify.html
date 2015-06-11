@@ -1,0 +1,146 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+	<HEAD>
+		<TITLE>修改角色的权限</TITLE>
+		<link rel="stylesheet" type="text/css" title="xp"
+			href="../css/skins/xp/validator/component.css" />
+		<link rel="stylesheet" type="text/css" title="xp"
+			href="../css/skins/xp/navbar/nav.css" />
+		<link rel="stylesheet" type="text/css" title="xp"
+			href="../css/skins/xp/table/skin.css" />
+		<link rel="stylesheet" type="text/css" title="xp"
+			href="../css/skins/xp/time/skin.css" />
+		<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+		<META NAME="Description" CONTENT="Power by 51windows.Net">
+	</HEAD>
+	
+	<script type="text/javascript">
+	  
+	function submitForm(frm){
+	  var e = document.getElementById('added');	
+	  for(var i=0;i<e.options.length;i++){
+              e.options[i].selected=true;
+          }
+         if(confirm("确认提交?")){
+           frm.submit();
+           return true;
+           }
+         return false;
+     
+	  }
+	</script>
+	<BODY>
+
+		<div id="main">
+
+
+			<form name="frm" method="post" action=""
+				onSubmit='return submitForm(document.forms[0]);'>
+				<!-- -->
+				<table class="standard">
+					<thead>
+						<tr>
+							<th align="center" colspan="4">
+								角色的权限管理
+							</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+
+
+							<td>
+
+								
+								还可以赋予的权限
+
+							</td>
+							<td>
+							</td>
+							<td>
+
+								当前角色的权限
+
+							</td>
+						</tr>
+						<tr>
+							<td width="40%">
+								<select style="width: 100%;" multiple name="adding" size="8"
+							ondblclick="moveOption(document.getElementById('adding'), document.getElementById('added'))">
+									<option value="20">
+										添加用户
+									</option>
+									<option value="30">
+										添加体育类别
+									</option>
+									<option value="40">
+										添加赛事
+									</option>
+									<option value="50">
+										添加参赛队
+									</option>
+									<option value="60">
+										添加国家
+									</option>
+									<option value="70">
+										添加比赛
+									</option>
+								</select>
+							</td>
+							<td width="20%" align="center">
+								<input type="button" value="右移"
+									onclick="moveOption(document.getElementById('adding'), document.getElementById('added'))">
+								<br>
+								<br>
+								<input type="button" value="左移"
+									onclick="moveOption(document.getElementById('added'),
+						document.getElementById('adding'))">
+							</td>
+							<td width="40%">
+								<select style="width: 100%;" multiple name="added" size="8"
+									ondblclick="moveOption(document.getElementById('added'), document.getElementById('adding'))">
+								</select>
+							</td>
+						</tr>
+						<tr>
+							<td width="40%">
+								&nbsp;
+							</td>
+							<td width="20%" align="center">
+								<input type="submit" name="result" id="result" size="40"
+									value="提交" />
+							</td>
+							<td>
+								&nbsp;
+							</td>
+						</tr>
+					</tbody>
+					<tfoot>
+						<tr>
+							<td colspan="4" style="text-align: left"></td>
+
+						</tr>
+					</tfoot>
+				</table>
+
+
+			</form>
+		</div>
+		<script language="JavaScript">
+<!--
+function moveOption(e1, e2){
+ for(var i=0;i<e1.options.length;i++){
+  if(e1.options[i].selected){
+   var e = e1.options[i];
+   e2.options.add(new Option(e.text, e.value));
+   e1.remove(i);
+   i=i-1
+  }
+ }
+// document.getElementById('result').value=getvalue(document.getElementById('right'));
+}
+
+//-->
+</script>
+	</BODY>
+</HTML>

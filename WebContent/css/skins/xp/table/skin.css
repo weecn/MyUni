@@ -1,0 +1,70 @@
+/**
+* @version 0.1: skin.css,2006/03/30 EddiSheng Exp $
+* @package SelfCare
+*/
+
+@import url("../../../ui.css");
+
+.standard {
+	background-color: #FFF;
+	margin: 0px;
+	padding: 0px;
+	border-width: 0px;
+	border-spacing: 0px;
+	width: 100%;
+	border-collapse: collapse;
+}
+.standard thead{
+}
+.standard thead tr{
+	top:0px;
+	bottom:0px;
+}
+.standard thead th {
+	margin: 0px;
+	padding: 4px;
+	border-bottom: 2px solid #FF9E31;
+	height: 25px;
+	background-color: #E4E1DC;
+	font-size: 11px;
+}
+.standard thead th:first-child
+{
+	padding-right:1em;
+	text-align:center;
+	background:transparent url(thead_left.gif) no-repeat top left;
+}
+.standard thead th.title {
+	text-align: left;
+}
+.standard tbody{
+	background-color:#FFF;
+}
+.standard tbody tr {
+	background-color:expression("#FFFFFF,#EEEEEE".split(",")[rowIndex%2])
+}
+.standard tbody tr td {
+	border-bottom: 1px solid #e5e5e5;
+	font-size: 11px;
+	font-weight: normal;
+	text-align: center;
+	/*border-bottom: 1px solid #ddd;*/
+	margin: 0px;
+	padding: 4px;
+	word-break: break-all;
+}
+.standard tfoot{
+	
+}
+.standard tfoot tr{
+	
+}
+.standard tfoot tr td{
+	margin: 0px;
+	padding: 4px;
+	border-top: 2px solid #FF9E31;
+	height: 25px;
+	background-color: #E4E1DC;
+	font-size: 11px;
+	text-align:right;
+}

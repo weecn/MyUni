@@ -1,0 +1,36 @@
+@import url("../../../ui.css");
+
+.navi {
+	background-color: #FFF;
+	margin: 0px;
+	padding: 0px;
+	border-width: 0px;
+	border-spacing: 0px;
+	width: 100%;
+	border-collapse: collapse;
+	border: 1px solid #EEEEEE;
+}
+.navi tr{
+	top:0px;
+	bottom:0px;
+}
+.navi th {
+	font: bold 12px tahoma,verdana,sans-serif;
+	letter-spacing: 0;
+	border-top: 1px solid #FF9E31;
+	background-color: #E4E1DC;
+	background: url("sec-title.gif") no-repeat 0 0;
+	border: none;
+	height: 10px;
+	-moz-border-radius: 0;
+	text-align:left;
+}
+.navi td {
+	background-color: #fff;
+	color: #000;
+	border: 0px solid #EEEEEE;
+	border-width: 0 0px 0px 0px;
+	-moz-border-radius: 0;
+	padding: 3px;
+	font-size:10px
+}

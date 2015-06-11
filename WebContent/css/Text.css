@@ -1,0 +1,62 @@
+a.s1:link,a.s1:visited{ color:#27600c; text-decoration:none;text-decoration:none; font-size: 9pt; font-family: verdana, arial, helvetica, sans-serif; font-weight: bold;  line-height:37px;}
+a.s1:hover{  color:#66ccff; text-decoration:none;  font-size: 9pt; font-family: verdana, arial, helvetica, sans-serif; font-weight: bold;  line-height:37px;}
+ 
+a.s:link,a.s:visited{ color:#ffffff; text-decoration:none;text-decoration:none; font-size: 9pt; font-family: verdana, arial, helvetica, sans-serif; font-weight: bold;  line-height:28px;}
+a.s:hover{ color:#27600c; text-decoration:none;  font-size: 9pt; font-family: verdana, arial, helvetica, sans-serif; font-weight: bold;  line-height:28px;}
+.time_z{
+	font-size: 7pt;
+	font-family: verdana, arial, helvetica, sans-serif;
+	font-weight: bold;
+	line-height: 20px;
+}
+.time_text { font-size:12px; line-height: 20px;}
+.time_zi{ margin-left:5px;}
+.Live_z {
+	font-family: "Times New Roman", Times, serif;
+	font-size: 16px;
+	line-height: 27px;
+	font-weight: bold;
+	color: #FFFFFF;
+	text-decoration: none;
+	margin-left:20px;
+}
+.Bottom_z {
+	font-family: "Times New Roman", Times, serif;
+	font-size: 12px;
+	line-height: 80px;
+	color: #000000;
+	text-decoration: none;
+}
+a.Download:link,a.Download:visited { color:#000000; text-decoration:none;text-decoration:none; font-size: 9pt; font-family: verdana, arial, helvetica, sans-serif; font-weight: normal;  line-height:20px;}
+a.Download:hover{ color:#27600c; text-decoration:none;  font-size: 9pt; font-family: verdana, arial, helvetica, sans-serif; font-weight: normal;  line-height:20px;}
+.Issue_z {
+	font-family: "Times New Roman", Times, serif;
+	font-size: 13px;
+	line-height: 20px;
+	font-weight: bold;
+	color: #000000;
+	text-decoration: none;
+}
+.Answer_z {	font-family: "Times New Roman", Times, serif;
+	font-size: 12px;
+	line-height: 20px;
+	font-weight: normal;
+	color: #000000;
+	text-decoration: none;}
+.Title_z , .Title_zi{
+	font-family: "Times New Roman", Times, serif;
+	font-size: 16px;
+	font-weight: bold;
+	color: #000000;
+	text-decoration: none;
+}
+.Title_zi {
+	font-size: 13px;
+}
+
+.xboxcontent{
+ line-height:20px;}
+a:link,a:visited{
+ text-decoration:none;
+ color:#316AC5;}
+a:hover{ color:#0000FF;}  

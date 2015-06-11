@@ -1,0 +1,167 @@
+
+<html>
+	<head>
+		<title>赛事添加</title>
+		<link rel="stylesheet" type="text/css" title="xp"
+			href="../css/skins/xp/validator/component.css" />
+		<link rel="stylesheet" type="text/css" title="xp"
+			href="../css/skins/xp/navbar/nav.css" />
+		<link rel="stylesheet" type="text/css" title="xp"
+			href="../css/skins/xp/table/skin.css" />
+		<link rel="stylesheet" type="text/css" title="xp"
+			href="../css/skins/xp/time/skin.css" />
+		<script type="text/javascript" src="../jscript/time/calendar.js"></script>
+		<script type="text/javascript" src="../jscript/time/calendar-zh.js"></script>
+		<script type="text/javascript" src="../jscript/time/calendar-setup.js"></script>
+		<script type="text/javascript" src="../jscript/common.js"></script>
+		<script type="text/javascript"  src="../jscript/validator/form_validator.js" /></script>
+		
+
+		<script type="text/javascript">
+		var validatedInfo		= "correct";
+		var requireErrorInfo	= "required<br/>";
+		var msgInfo	= new Array();
+		
+		msgInfo[0]				= new Array('name required','name error');
+		var name				= new formEle(true,"no",null,"name_info",msgInfo[0]);
+	
+		
+		msgInfo[0]				= new Array('sport required','sport error');
+		var sport				= new formEle(true,"no",null,"sport_info",msgInfo[0]);
+		
+		msgInfo[0]				= new Array('description required','description error');
+		var description			= new formEle(true,"no",null,"description_info",msgInfo[0]);
+		
+	   msgInfo[0]				= new Array('idate required','idate error');
+	    var start				= new formEle(true,"no",null,"start_info",msgInfo[0]);		
+	    
+		msgInfo[0]				= new Array('mdate required','mdate error');
+	    var end				    = new formEle(true,"no",null,"end_info",msgInfo[0]);	
+	    
+	    	
+	    
+		
+		function submitForm(obj) {	
+		
+			var ret = validateAll(obj);			
+			if (ret == true) {		 
+				if (document.forms[0].submit) {		
+					document.forms[0].submit.disabled = true;		
+				}		
+			}		
+			return ret;		
+		}
+</script>
+		<style type="text/css">
+body,table,td,select,textarea,input {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+}
+</style>
+	</head>
+	<body>
+		<div id="main">
+
+
+			<form name="eventform" method="post" action=""
+				onSubmit='return submitForm(document.forms[0]);'>
+				<table class="standard">
+					<thead>
+						<tr>
+							<th align="center" colspan="2">
+								 赛事添加
+							</th>
+						</tr>
+					</thead>
+					<tbody>
+
+						<tr>
+							<td align="left">
+								赛事名称
+							</td>
+							<td align="left">
+								<input name="name" type="text" TABINDEX="1" id="name" />
+								<div class="Info">
+									<div id="name_info"></div>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td align="left">
+								体育类别
+							</td>
+							<td align="left">
+								<select name="sport" TABINDEX="2" id="sport">
+
+									<option value='sport.id'>
+										足球
+									</option>
+									<option value='sport.id'>
+										篮球
+									</option>
+								</select>
+								<div class="Info">
+									<div id="sport_info"></div>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td align="left">
+								描述
+							</td>
+							<td align="left">
+								<input name="description" type="text" TABINDEX="3"
+									id="description" />
+								<div class="Info">
+									<div id="description_info"></div>
+								</div>
+							</td>
+						</tr>
+
+						<tr>
+							<td align="left">
+								开始时间
+							</td>
+							<td align="left">
+								<input name="start" type="text" TABINDEX="4" id="start" />
+								<div class="Info">
+									<div id="start_info"></div>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td align="left">
+								结束时间
+							</td>
+							<td align="left">
+								<input name="end" type="text" TABINDEX="5" id="end" />
+								<div class="Info">
+									<div id="end_info"></div>
+								</div>
+							</td>
+						</tr>
+
+
+						<tr>
+							<td colspan="2" align="center">
+								<input class="submitButton" type="submit" TABINDEX="6"
+									name="submit" value="提交">
+							<input type="button" name="返回"  class="submitButton" value="返回" onclick="history.back();">		
+							</td>
+						</tr>
+
+					</tbody>
+					<tfoot>
+						<tr>
+							<td colspan="2" style="text-align: left">
+								<script type="text/javascript"
+									src="../jscript/time/timesetup.js"></script>
+							</td>
+
+						</tr>
+					</tfoot>
+				</table>
+			</form>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data-sources>
+	<data-source id="oracle_thin-1434032753157--1113131905" provider="oracle" driver="oracle_thin" name="JCMS_C##CMS" create-date="1434032851154" save-password="true" show-system-objects="true" read-only="false">
+		<connection host="127.0.0.1" port="1521" server="" database="orcl" url="jdbc:oracle:thin:@//127.0.0.1:1521/orcl" user="c##cms" password="EAkVQKA=" home="D:\Software\Oracle\product\12.1.0\dbhome_1" type="dev">
+			<property name="@dbeaver-sid-service@" value="SERVICE"/>
+			<property name="@dbeaver-connection-type@" value="BASIC"/>
+			<property name="@dbeaver-check-schema-content@" value="true"/>
+			<property name="@dbeaver-always-show-dba@" value="false"/>
+			<network-handler type="PROXY" id="socks_proxy" enabled="false" user="" save-password="false">
+				<property name="socks-host" value=""/>
+				<property name="socks-port" value="1080"/>
+			</network-handler>
+			<network-handler type="TUNNEL" id="ssh_tunnel" enabled="false" user="" save-password="false">
+				<property name="port" value="22"/>
+				<property name="host" value=""/>
+				<property name="keyPath" value=""/>
+				<property name="authType" value="PASSWORD"/>
+			</network-handler>
+		</connection>
+		<custom-property name="default.activeObject" value=""/>
+	</data-source>
+</data-sources>

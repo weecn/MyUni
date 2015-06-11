@@ -1,0 +1,169 @@
+
+<html>
+	<head>
+		<title>用户修改</title>
+		<link rel="stylesheet" type="text/css" title="xp"
+			href="../css/skins/xp/validator/component.css" />
+		<link rel="stylesheet" type="text/css" title="xp"
+			href="../css/skins/xp/navbar/nav.css" />
+		<link rel="stylesheet" type="text/css" title="xp"
+			href="../css/skins/xp/table/skin.css" />
+		<link rel="stylesheet" type="text/css" title="xp"
+			href="../css/skins/xp/time/skin.css" />
+		<script type="text/javascript" src="../jscript/time/calendar.js"></script>
+		<script type="text/javascript" src="../jscript/time/calendar-zh.js"></script>
+		<script type="text/javascript" src="../jscript/time/calendar-setup.js"></script>
+		<script type="text/javascript" src="../jscript/common.js"></script>
+		<script type="text/javascript"
+			src="../jscript/validator/form_validator.js" /></script>
+
+
+		<script type="text/javascript">
+		var validatedInfo		= "correct";
+		var requireErrorInfo	= "required<br/>";
+		var msgInfo	= new Array();
+		
+		msgInfo[0]				= new Array('name required','name error');
+		var name				= new formEle(true,"no",null,"name_info",msgInfo[0]);
+		
+		
+		msgInfo[0]				= new Array('pwd required','pwd error');
+		var password		    = new formEle(true,"no",null,"password_info",msgInfo[0]);
+				
+		msgInfo[0]				= new Array('description required','description error');
+		var description			= new formEle(true,"no",null,"description_info",msgInfo[0]);
+		
+		msgInfo[0]				= new Array('role required','role error');
+		var role				= new formEle(true,"no",null,"role_info",msgInfo[0]);	 
+
+		msgInfo[0]				= new Array('valid required','please input number like 1 ,2 ,3');
+		var valid				= new formEle(true,"num",null,"valid_info",msgInfo[0]);	    
+			    
+		msgInfo[0]				= new Array('email required','email error');
+	    var email			    = new formEle(true,"no",null,"email_info",msgInfo[0]);	
+
+		
+		function submitForm(obj) {	
+		
+			var ret = validateAll(obj);			
+			if (ret == true) {		 
+				if (document.forms[0].submit) {		
+					document.forms[0].submit.disabled = true;		
+				}		
+			}		
+			return ret;		
+		}
+</script>
+		<style type="text/css">
+body,table,td,select,textarea,input {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+}
+</style>
+	</head>
+	<body>
+		<div id="main">
+
+
+			<form name="backuserform" method="post"
+				action="../admin/backuser.do?method=added"
+				onSubmit='return submitForm(document.forms[0]);'>
+				<table class="standard">
+					<thead>
+						<tr>
+							<th align="center" colspan="2">
+								用户修改
+							</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td align="left">
+								用户名
+							</td>
+							<td align="left">
+								<input name="name" type="text" TABINDEX="1" id="name" />
+								<div class="Info">
+									<div id="name_info"></div>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td align="left">
+								用户密码
+							</td>
+							<td align="left">
+								<input name="password" type="password" value="" TABINDEX="2"
+									id="password" />
+								<div class="Info">
+									<div id="password_info"></div>
+								</div>
+							</td>
+						</tr>
+
+						<tr>
+							<td align="left">
+								角色
+							</td>
+							<td align="left">
+								<select name="role" TABINDEX="3" id="role">
+									<option value="1">
+										超级管理员
+									</option>
+								</select>
+
+								<div class="Info">
+									<div id="role_info"></div>
+								</div>
+							</td>
+						</tr>
+
+						<tr>
+							<td align="left">
+								是否有效
+							</td>
+							<td align="left">
+	                         			<select name="valid" TABINDEX="4" id="valid">
+								<option value="1">有效</option>
+								<option value="0">无效</option>
+							</select>
+								<div class="Info">
+									<div id="valid_info"></div>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td align="left">
+								EMAIL
+							</td>
+							<td align="left">
+								<input name="email" type="text" value="" TABINDEX="5" id="email" />
+								<div class="Info">
+									<div id="email_info"></div>
+								</div>
+							</td>
+						</tr>
+
+
+
+						<tr>
+							<td colspan="2" align="center">
+								<input class="submitButton" type="submit" TABINDEX="6"
+									name="submit" value="修&nbsp;改">
+								<input type="button" name="返回" class="submitButton" value="返回"
+									onclick="history.back();">
+							</td>
+						</tr>
+
+					</tbody>
+					<tfoot>
+						<tr>
+							<td colspan="2" style="text-align: left"></td>
+
+						</tr>
+					</tfoot>
+				</table>
+			</form>
+		</div>
+	</body>
+</html>

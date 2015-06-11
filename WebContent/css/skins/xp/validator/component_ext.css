@@ -1,0 +1,162 @@
+/* ============================================
+FAQ Styles 1
+
+Usage examples:
+<dl class="FaqStyle1">
+  <dt>Question 1</dt>
+  <dd>Answer 1</dd>
+  <dt>Question 2</dt>
+  <dd>Answer 2</dd>
+</dl>
+============================================ */
+
+dl.FaqStyle1 dt{
+	margin:10px 0 15px;
+	padding-left:15px;
+	font-weight:bold;
+	color:#111;
+}
+dl.FaqStyle1 dd{
+	margin:0 0 20px 10px;
+	padding:10px;
+	border:1px solid #EEE;
+	background-color:#F6F6F6;
+	line-height:150%;
+	color:#333;
+}
+dl.FaqStyle1 dt.HandCursor{
+	cursor:pointer !important;
+	cursor:hand;
+}
+
+/* ============================================
+Tip List Style 2
+
+Usage examples:
+<p>text</p>
+<ul class="TipListStyle2">
+	<li><a href="#.htm">text</a></li>	
+	<li><a href="#.htm">text</a></li>	
+</ul>
+============================================ */
+
+ul.TipListStyle2{
+	margin:15px 0 10px;
+	padding:0 10px;
+}
+ul.TipListStyle2 li{
+	list-style-type:none;
+	height:20px;
+	line-height:20px;
+	margin:0px;
+	clear:both;
+}
+ul.TipListStyle2 li/**/{
+	border-bottom:1px dashed #DCDBDF;
+}
+ul.TipListStyle2 li a{
+	float:left;
+	padding-left:25px;
+	color:#333333;
+}
+ul.TipListStyle2 li a:link
+{
+	color:#333333;
+}
+ul.TipListStyle2 li a:visited
+{
+	color:#333333;
+}
+ul.TipListStyle2 li a:hover,ul.TipListStyle2 li a:active
+{
+	color:#ff5500;
+}
+/* ============================================
+Field Set Inline Style
+============================================ */
+fieldset{
+	border:1px solid #DDD;
+}
+fieldset legend{
+	color:#333;
+	font-weight:bold;
+}
+
+/* ============================================
+Field Set Inline Style
+
+<form class="FieldsetInline" action="">
+<fieldset>
+	<legend>title</legend>
+	<label for="i_name">name£º<input id="i_name" name="name" type="text" value="tom" size="24" /></label>
+	<label for="i_age">age£º<input id="i_age" name="age" type="text" value="35" size="24" /></label>
+	<label for="i_submit" class="submit"><input id="i_submit" name="submit" type="button" value="GO" /></label>
+	<div class="HackBox"></div>
+</fieldset>
+</form>
+============================================ */
+form.FieldsetInline fieldset{
+	display:block;
+	margin: 0 0 3em 0;
+	padding: 0 1em 1em 1em;
+	text-align:left;
+}
+form.FieldsetInline fieldset label{
+	display:block;
+	float:left;
+	margin: 1em 1em 0 0;
+	font-weight:bold;
+	color:#333;
+}
+form.FieldsetInline fieldset label.submit{
+	clear: both;
+}
+form.FieldsetInline fieldset label.submit input{
+	width:8em;
+}
+form.FieldsetInline fieldset label input,form.FieldsetInline fieldset label select{
+	display:block;
+}
+/* ============================================
+Field Set Inline Style 2
+============================================ */
+form.FieldsetInline2 fieldset{
+	display:block;
+	margin: 0 0 3em 0;
+	padding: 0 1em 1em 1em;
+	text-align:left;
+}
+form.FieldsetInline2 fieldset label{
+	display:block;
+	float:left;
+	margin: 1em 1em 0 0;
+	color:#333;
+}
+/* ============================================
+Field Set List Style
+============================================ */
+
+form.FieldsetList fieldset{
+	display:block;
+	margin: 0 0 3em 0;
+	padding: 0 1em 1em 1em;
+	width:95%;
+	text-align:left;
+}
+form.FieldsetList fieldset label{
+	display:block;
+	margin: 1em 1em 0 0;
+	font-weight:bold;
+	color:#333;
+}
+form.FieldsetList fieldset label.submit{
+	clear: both;
+	text-align:center;
+}
+form.FieldsetList fieldset label.submit input{
+	width:8em;
+}
+form.FieldsetList fieldset label input,form.FieldsetList fieldset label select{
+	display:block;
+	width: 15em;
+}

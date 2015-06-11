@@ -1,0 +1,122 @@
+
+<html>
+<head>
+<title>Ad</title>
+<style type="text/css">
+body,table,td,select,textarea,input {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+}
+</style>
+		<link rel="stylesheet" type="text/css" title="xp"
+			href="../css/skins/xp/validator/component.css" />
+		<link rel="stylesheet" type="text/css" title="xp"
+			href="../css/skins/xp/navbar/nav.css" />
+		<link rel="stylesheet" type="text/css" title="xp"
+			href="../css/skins/xp/table/skin.css" />
+		<link rel="stylesheet" type="text/css" title="xp"
+			href="../css/skins/xp/time/skin.css" />
+		<script type="text/javascript" src="../jscript/time/calendar.js"></script>
+		<script type="text/javascript" src="../jscript/time/calendar-zh.js"></script>
+		<script type="text/javascript" src="../jscript/time/calendar-setup.js"></script>
+		<script type="text/javascript" src="../jscript/common.js"></script>
+
+</head>
+<body>
+<div id="main">
+<form name="sportform" method="post"
+	action="">
+<table class="sadminheading" style="top-margin: 10">
+	<tr>
+		<td nowrap class="admintitle" colspan="3" align="center">Ad
+		List</td>
+	</tr>
+
+	<tr>
+		<td align="left">Ad id: <input name="id" type="text" /></td>
+		<td align="left">Ad name: <input name="name" type="text" /></td>
+		<td align="left">Ad language: <input name="language" type="text" /></td>
+	</tr>
+	<tr>
+		<td align="left">start time:<input name="startdate" type="text"
+			id="start" /></td>
+		<td align="left">end time:<input name="enddate" type="text"
+			id="end" /> <script type="text/javascript"
+			src="../jscript/time/timesetup.js"></script></td>
+		<td align="right">submit&nbsp;&nbsp;&nbsp;&nbsp;	<input type="hidden" name="pagenum" value="" />
+	<input type="hidden" name="pagerows" value="" /></td>
+	</tr>
+
+
+</table>
+</form>
+<table class="standard">
+	<thead>
+		<tr>
+			<th>id</th>
+			<th>name</th>
+			<th>url</th>
+			<th>type</th>
+			<th>valid</th>
+			<th>idate</th>
+			<th>mdate</th>
+			<th>language</th>
+			<th>prior</th>
+			<th>icon</th>
+			<th>action</th>
+		</tr>
+	</thead>
+	<tbody>
+					<tr>
+					<td>ad.id</td>
+					<td>ad.name</td>
+					<td>ad.url</td>
+					<td>ad.type</td>
+					<td>ad.valid</td>
+					<td>yyyy-MM-dd HH:mm:ss"
+						
+						</td>
+					<td>yyyy-MM-dd HH:mm:ss</td>
+					<td>ad.language</td>
+					<td>ad.prior</td>
+					<td>ad.icon</td>
+					<td><a href='#'>update</a>
+					    <a href='#'>delete</a>
+					 </td>
+                   
+				</tr>
+	
+		
+			<tr>
+				<td colspan="11">No data found</td>
+			</tr>
+		</c:if>
+	</tbody>
+	<tfoot>
+					<tr>
+						<td colspan="7" style="text-align: left">
+							1/1 total rows 1
+						</td>
+						<td colspan="4" align="right">
+							<a href="#"
+								onclick="turn(document.forms[0],'first',1,1,'jump page');">first</a>
+							<a href="#"
+								onclick="turn(document.forms[0],'prev', 1,1,'jump page');">prev</a>
+
+							<a href="#"
+								onclick="turn(document.forms[0],'next',1,1,'jump page');">next</a>
+							<a href="#"
+								onclick="turn(document.forms[0],'last',1,1,'jump page');">last</a>
+
+
+							go
+							<input type="text" name="cpage" size="5" id="jumpto" />
+							<a href="#"
+								onclick="turn(document.forms[0],'jump',1,1,'jump page');">go</a>
+						</td>
+					</tr>
+	</tfoot>
+</table>
+</div>
+</body>
+</html>

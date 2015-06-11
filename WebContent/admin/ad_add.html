@@ -1,0 +1,204 @@
+
+<html>
+<head>
+<title>ad_add</title>
+		<link rel="stylesheet" type="text/css" title="xp"
+			href="../css/skins/xp/validator/component.css" />
+		<link rel="stylesheet" type="text/css" title="xp"
+			href="../css/skins/xp/navbar/nav.css" />
+		<link rel="stylesheet" type="text/css" title="xp"
+			href="../css/skins/xp/table/skin.css" />
+		<link rel="stylesheet" type="text/css" title="xp"
+			href="../css/skins/xp/time/skin.css" />
+		<script type="text/javascript" src="../jscript/time/calendar.js"></script>
+		<script type="text/javascript" src="../jscript/time/calendar-zh.js"></script>
+		<script type="text/javascript" src="../jscript/time/calendar-setup.js"></script>
+		<script type="text/javascript" src="../jscript/common.js"></script>
+
+<script type="text/javascript">
+		var validatedInfo		= "correct";
+		var requireErrorInfo	= "required<br/>";
+		var msgInfo	= new Array();
+		
+		msgInfo[0]				= new Array('name required','name error');
+		var name				= new formEle(true,"no",null,"name_info",msgInfo[0]);
+		
+		msgInfo[0]				= new Array('type required','please input number like 1 ,2 ,3');
+		var type				= new formEle(true,"num",null,"type_info",msgInfo[0]);
+		
+		msgInfo[0]				= new Array('valid required','valid error');
+		var valid			    = new formEle(true,"num",null,"valid_info",msgInfo[0]);
+		
+		msgInfo[0]				= new Array('idate required','idate error');
+	    var start				= new formEle(true,"no",null,"start_info",msgInfo[0]);		
+	    
+		msgInfo[0]		 		= new Array('mdate required','mdate error');
+	    var end			    	= new formEle(true,"no",null,"end_info",msgInfo[0]);
+	    
+		msgInfo[0]				= new Array('reason required','reason error');
+	    var reason			    = new formEle(true,"no",null,"reason_info",msgInfo[0]);	    	
+	    
+		msgInfo[0]				= new Array('language required','language error');
+	    var language			= new formEle(true,"no",null,"language_info",msgInfo[0]);
+	    
+		msgInfo[0]				= new Array('prior required','prior error');
+	    var prior				= new formEle(true,"num",null,"prior_info",msgInfo[0]);		
+	    	
+		msgInfo[0]				= new Array('icon required','icon error');
+	    var icon			    = new formEle(true,"no",null,"icon_info",msgInfo[0]);
+	    
+		msgInfo[0]				= new Array('url required','url error');
+	    var url			        = new formEle(true,"no",null,"url_info",msgInfo[0]);
+	    	
+	    
+		
+		function submitForm(obj) {	
+		
+			var ret = validateAll(obj);			
+			if (ret == true) {		 
+				if (document.forms[0].submit) {		
+					document.forms[0].submit.disabled = true;		
+				}		
+			}		
+			return ret;		
+		}
+</script>
+<style type="text/css">
+body,table,td,select,textarea,input {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+}
+</style>
+</head>
+<body>
+<div id="main">
+
+
+<form name="adform" method="post"
+	action="../admin/ad.do?method=added"
+	onSubmit=''>
+<table class="standard">
+	<thead>
+		<tr>
+			<th align="left">title</th>
+			<th align="left">value</th>
+		</tr>
+	</thead>
+	<tbody>
+
+		<tr>
+			<td align="left">name</td>
+			<td align="left"><input name="name" type="text" TABINDEX="1"
+				id="name" />
+			<div class="Info">
+			<div id="name_info"></div>
+			</div>
+			</td>
+		</tr>
+		<tr>
+			<td align="left">type</td>
+			<td align="left"><input name="type" type="text" value="2"
+				TABINDEX="2" id="type" />
+			<div class="Info">
+			<div id="type_info"></dive></div>
+			</td>
+		</tr>
+		<tr>
+			<td align="left">valid</td>
+			<td align="left"><input name="valid" type="text" TABINDEX="3"
+				id="valid" />
+			<div class="Info">
+			<div id="valid_info"></div>
+			</div>
+			</td>
+		</tr>
+	<!-- 	
+		<tr>
+			<td align="left">idate</td>
+			<td align="left"><input name="start" type="text" TABINDEX="4"
+				id="start" />
+			<div class="Info">
+			<div id="start_info"></div>
+			</div>
+			</td>
+		</tr>
+		<tr>
+			<td align="left">mdate</td>
+			<td align="left"><input name="end" type="mdate" TABINDEX="5"
+				id="end" />
+			<div class="Info">
+			<div id="end_info"></div>
+			</div>
+			</td>
+		</tr>
+		 --> 
+		<tr>
+			<td align="left">reason</td>
+			<td align="left"><input name="reason" type="text" 
+				TABINDEX="6" id="reason" />
+			<div class="Info">
+			<div id="reason_info"></div>
+			</div>
+			</td>
+		</tr>
+		<tr>
+			<td align="left">language</td>
+			<td align="left">
+			
+			
+			<select name="language" 
+				TABINDEX="7" id="language">
+				
+						<option value='1'>1</option>
+			</select>
+			
+			<div class="Info">
+			<div id="language_info"></div>
+			</div>
+			</td>
+		</tr>
+		<tr>
+			<td align="left">prior</td>
+			<td align="left"><input name="prior" type="text" 
+				TABINDEX="8" id="prior" />
+			<div class="Info">
+			<div id="prior_info"></div>
+			</div>
+			</td>
+		</tr>
+		<tr>
+			<td align="left">icon</td>
+			<td align="left"><input name="icon" type="text" 
+				TABINDEX="9" id="icon" />
+			<div class="Info">
+			<div id="icon_info"></div>
+			</div>
+			</td>
+		</tr>
+		<tr>
+			<td align="left">url</td>
+			<td align="left"><input name="url" type="text" 
+				TABINDEX="10" id="url" />
+			<div class="Info">
+			<div id="url_info"></div>
+			</div>
+			</td>
+		</tr>
+
+		<tr>
+			<td colspan="2" align="center"><input class="submitButton"
+				type="button" TABINDEX="11" name="submit" value="submit" onclick="history.back()";></td>
+		</tr>
+
+	</tbody>
+	<tfoot>
+		<tr>
+			<td colspan="2" style="text-align: left"></td>
+
+		</tr>
+	</tfoot>
+</table>
+</form>
+</div>
+</body>
+</html>

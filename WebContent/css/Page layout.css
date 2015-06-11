@@ -1,0 +1,241 @@
+/* CSS Document */
+
+/****主体内容****/
+
+body {
+	margin: 0px;
+	font-size:12px;
+}
+/****主体内容****/
+.p{ margin-left:8px; margin-top:10px;}
+#Q { height:620PX;}
+.table,.table td { border:1px solid #cccccc;}
+/****页面主框架****/
+#main_nei  , #main_nei1 , #main_nei2 , #main_nei3 , #main_nei4 , #main_nei5 ，#main_nei6 ，#main_nei7 , .main_nei5 {
+	 WIDTH: 982px; MARGIN-LEFT: 0px; MARGIN: 0px auto; height:10px;
+}
+/****页面主框架****/
+.Spaces { height:10px;}
+/****页面的导航****/
+#main_nei1 { height:94px;}
+.Navigation_left { width:490px; height:70px; float:left;}
+.Navigation_right { width:492px; height:64px; float:right; margin-top:0; padding-top:0; z-index:2; vertical-align:top;}
+#time_a{ width:151px; height:20px; line-height:20px; text-align:left; background-image:url(../images/time.jpg);}
+.input{ height:12px;}
+/****页面的导航****/
+
+#main_nei2 { height:19px;}
+.nei2_Content {
+    height:19px;
+	background-image:url(../images/b.gif);
+	border-right-width: 1px;
+	border-left-width: 1px;
+	border-right-style: solid;
+	border-left-style: solid;
+	border-right-color: #CCCCCC;
+	border-left-color: #CCCCCC;
+}
+ #main_nei3 { 
+    height:auto; width:980px;
+	border-right-width: 1px;
+	border-left-width: 1px;
+	border-right-style: solid;
+	border-left-style: solid;
+	border-right-color: #CCCCCC;
+	border-left-color: #CCCCCC;
+	
+}
+
+ /*********页面的介绍内容*********/
+
+#main_nei4 { height:240px; width:980px;}
+#main4_left {
+	FLOAT: left; WIDTH: 700px; MARGIN-LEFT: 0px; height:200px;
+}
+.Introduction_left { height:200px; width:700px;}
+#main4_right {
+	FLOAT: right; MARGIN-LEFT: 0px; WIDTH: 275px; TEXT-ALIGN: left; height:200px;
+}
+.Introduction_right { height:200px; width:260px; margin-top:7px;}
+  #xsnazzy{
+   width:670px;
+   float:left;
+   margin-top:1%;
+   margin-left:2%;
+   text-align:left;}
+ #xsnazzy p {margin:0 10px; letter-spacing:1px; text-align:left;}
+.xtop, .xbottom {display:block; background:transparent; font-size:1px;}
+.xb1, .xb2, .xb3, .xb4 {display:block; overflow:hidden;}
+.xb1, .xb2, .xb3 {height:1px;}
+.xb2, .xb3, .xb4 { border-left:1px solid #ccc; border-right:1px solid #ccc;}
+.xb1 {margin:0 5px; background:#ccc;}
+.xb2 {margin:0 3px; border-width:0 2px;}
+.xb3 {margin:0 2px;}
+.xb4 {height:2px; margin:0 1px;}
+.xboxcontent {display:block;  border:0 solid #ccc; border-width:0 1px; height:210px;}
+ /*********页面的介绍内容*********/
+ 
+ /*********页面的直播内容*********/
+#main_nei5 {  width:980px; height:auto;}
+.main_nei5{ height:315px; width:980px;}
+.Live_top { height:27px; background-image:url(../images/b12.gif);}
+.Live_top_r { height:27px; background-image:url(../images/tiao10.GIF);}
+.Live_Center {
+          background-image:url(../images/b7.gif);
+          background-repeat:repeat-x;
+          background-color:#8bb452;
+		  margin-top:10px;
+          width:980px;
+           height:580px;
+}
+.live_Center_list,.live_Center_list_title,.live_Center_list1 {
+	margin-left:0;
+	padding-left:0;
+	display:block;
+	margin-bottom:0;
+	padding-bottom:0;
+	margin-top:0;
+	margin-top:0;
+	height:30px;
+	border-bottom-width: 1px;
+	border-bottom-style: dashed;
+	border-bottom-color: #000000;
+	margin-top:10px;
+	
+} 
+.live_Center_list_title1{
+	margin-left:0;
+	padding-left:0;
+	display:block;
+	margin-bottom:0;
+	padding-bottom:0;
+	margin-top:0;
+	margin-top:0;
+
+	border-bottom-width: 1px;
+	border-bottom-style: dashed;
+	border-bottom-color: #000000;
+	
+}
+
+.live_Center_list_title,.live_Center_list_title1 {
+ font-weight:bold;
+ color:#316ac5;
+ padding-bottom:3%;
+ } 
+.live_Center_list li,.live_Center_list_title li{
+ list-style:none;
+ display:inline;
+ width:9%;
+ text-align:center;
+ float:left;
+ padding-left:0;
+ margin-left:0;
+ height:14px;
+ overflow:hidden;
+ margin-bottom:6px;
+} 
+.live_Center_list1 li,.live_Center_list_title1 li{
+ list-style:none;
+ display:inline;
+ width:9%;
+ text-align:center;
+ float:left;
+ padding-left:0;
+ margin-left:0;
+ height:14px;
+ overflow:hidden;
+ margin-bottom:6px;
+} 
+
+*{margin:0;padding:0;}.menu{font-size:12px;position:relative;z-index:100; }.menu ul{list-style:none; }.menu li {float:left;position:relative; }.menu ul ul {visibility:hidden;position:absolute;left:3px;top:35px;}.menu table {position:absolute; top:0; left:0;}.menu ul li:hover ul,.menu ul a:hover ul{visibility:visible;}.menu a{display:block;padding:2px 10px;margin:3px;color:#fff;text-decoration:none;}.menu a:hover{}.menu ul ul{}.menu ul ul li { display:block;clear:both;text-align:left;font-size:12px;}.menu ul ul li a{width:100px;height:13px;margin:0;border:0;background:#cccccc; font-weight:bold;}.menu ul ul li a:hover{border:0;background:#72b141;}
+
+.menu {display:block; z-index:100;} 
+a.outer, a.outer:visited {color:#000; width:90px; height:18px; display:block;   margin-right:1px; text-align:center; float:left; text-decoration:none; font-family:tahoma, vardana, arial, sans-serif; font-size:10px; line-height:18px; overflow:hidden;} 
+a.outer:hover {color:#fff; overflow:visible;} 
+a.outer table, a.outer:visited table{ display:none;}
+a.outer:hover table {display:block;  border-collapse:collapse; margin-left:50%; z-index:110;} 
+a.inner, a.inner:visited {display:block; width:88px; height:18px;  text-decoration:none; color:#000;font-family:tahoma, vardana, arial, sans-serif; font-size:10px; text-align:center;} 
+a.inner:hover {background:#add;} 
+
+ /*********页面的直播内容*********/
+ 
+ /*********页面的下载内容*********/
+ #main_nei6 { height:auto; width:980px;}
+.Download_top { height:27px; background-image:url(../images/b12.gif);}
+.Download_Center {
+          background-image:url(../images/b7.gif);
+          background-repeat:repeat-x;
+          background-color:#8bb452;
+		  margin-top:10px;
+          width:980px;
+           height:400px auto;
+}
+.Download_Center_list{
+	margin-left:0;
+	padding-left:0;
+	display:block;
+	margin-bottom:0;
+	padding-bottom:0;
+	margin-top:0;
+	margin-top:0;
+	height:60px;
+	border: 1px dashed #000000;
+} 
+ .Download_Center_list_title{
+    margin-left:0;
+	padding-left:0;
+	display:block;
+	margin-bottom:0;
+	padding-bottom:0;
+	margin-top:0;
+	margin-top:0;}
+.Download_Center_list_title{
+ font-weight:bold;
+ color:#316ac5;
+ padding-bottom:3%;
+ 
+ } 
+.Download_Center_list li{
+	list-style:none;
+	display:inline;
+	width:97px;
+	text-align:center;
+	float:left;
+	padding-left:0;
+	margin-left:0;
+	line-height: 60px;
+} 
+       
+
+.Download_Center_list_title li { 	
+    list-style:none;
+	display:inline;
+	width:10%;
+	text-align:center;
+	float:left;
+	padding-left:0;
+	margin-left:0;}
+.Download_Center_x {
+	border-left-width: 1px;
+	border-left-style: dashed;
+	border-left-color: #000000;
+}
+ /*********页面的下载内容*********/
+ 
+  /*********页面的底部内容*********/
+#main_nei7 { height:80px;}
+.Bottom_Content {
+	height:80px;
+	margin-top:8px;
+	border: 1px solid #cccccc;
+}
+  /*********页面的底部内容*********/
+  
+    /*********软件页面的帮助按钮*********/
+.help_Button { float:right; margin-top:5px;; margin-right:10px;}
+    /*********软件页面的帮助按钮*********/
+	
+/*********广告*********/
+.ad { width:700px; height:auto;}
+/*********广告*********/

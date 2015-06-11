@@ -1,0 +1,172 @@
+<html>
+<head>
+  	<title>µÇÂ¼</title>
+	<link rel="stylesheet" type="text/css" title="xp" href="../css/skins/xp/table/skin.css" />
+	<link rel="stylesheet" type="text/css" title="xp" href="../css/skins/xp/validator/component.css" />
+	<script type="text/javascript" src="../jscript/validator/form_validator.js"></script>
+	<script type="text/javascript">
+		var validatedInfo		= "correct";
+		var requireErrorInfo	= "required<br/>";
+		var msgInfo	= new Array();
+		
+		msgInfo[0]				= new Array('username required','username error');
+		var mobile				= new formEle(true,"no",null,"mobile_info",msgInfo[0]);
+		msgInfo[0]				= new Array('password required','login.password length must be correct');
+		var password			= new formEle(true,"password",null,"password_info",msgInfo[0]);
+		
+	
+
+		</script>
+	<style type="text/css">
+		body, table, td, select, textarea, input  { 
+			font-family: Verdana, Arial, Helvetica, sans-serif; 
+			font-size: 11px; 
+		}
+	</style>
+  </head>
+  
+  <body  bgcolor='#FFFFFF'  text='#000000' leftmargin='0' topmargin='0' marginwidth='0' marginheight='0' >
+  	<table width='100%' border='0' cellspacing='0' cellpadding='0'>
+		<tr>
+			<td height='48' bgcolor='#AECC2D' valign='bottom'>&nbsp;&nbsp;&nbsp;&nbsp;
+				
+			</td>
+			<td bgcolor='#AECC2D' valign='top' align='right'>&nbsp;</td>
+		</tr>
+	</table> 
+	<table width='100%' border='0' cellspacing='0' cellpadding='0'>
+		<tr>
+			<td colspan='2' height='6' bgcolor='#AECC2D'>
+				<img src="../images/admin/login/spacer.gif"  height='1' width='1'>
+			</td>
+		</tr>
+	</table>
+	<table width='100%' border='0' cellspacing='0' cellpadding='0'>
+		<tr>
+			<td height='24' width='181' bgcolor='#AECC2D'>&nbsp;</td>
+			<td height='24' bgcolor='#AECC2D'>
+				<table border='0' cellspacing='0' cellpadding='0' width='100%'>
+					<tr>
+						<td>
+							<table border='0' cellspacing='0' cellpadding='0' width='1'>
+								<tr>
+									<td bgcolor='#FFFFFF' valign='middle' nowrap>&nbsp;&nbsp;welcome !</td>
+									<td><img src="../images/admin/login/tab-ew.gif"  width='10' height='24'></td>
+								</tr>
+							</table>
+						</td>
+						<td align='right' valign='middle' nowrap>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+	</table>
+	<table width='100%' border='0' cellspacing='0' cellpadding='0'>
+		<tr>
+			<td valign='top'>
+				<table width='181' border='0' cellspacing='0' cellpadding='0'>
+					<tr valign='top'>
+						<td colspan='2' width='20' height='48' bgcolor='#AECC2D' valign='bottom'>&nbsp;</td>
+					</tr>
+					<tr valign='top'>
+						<td width='20' height='24'><img src="../images/admin/login/grad-1.gif" width='20' height='20'></td>
+						<td height='24'><img src="../images/admin/login/grad-1.gif"  width='160' height='20'></td>
+					</tr>
+					<tr>
+						<td width='20'>&nbsp;</td>
+						<td class='nav'>&nbsp;</td>
+					</tr>
+				</table>
+			</td>
+			<td valign='top' width='100%'>
+				<table width='100%' border='0' cellspacing='0' cellpadding='0'>
+					<tr>
+						<td width='40' height='20'>&nbsp;</td>
+						<td height='20'>&nbsp;</td>
+					</tr>
+					<tr>
+						<td width='20'>&nbsp;</td>
+						<td><br></td>
+						<td width='40'>&nbsp;</td>
+					</tr>
+				</table>
+				<img src="../images/admin/login/break-el.gif"   height='1' width='100%' vspace='5'>
+				<table width='100%' border='0' cellspacing='0' cellpadding='0'>
+					<tr>
+						<td width='40'>&nbsp;</td>
+						<td><br>
+							<form name='loginForm' method='post' action='admin/login.action'>
+								
+							<table width='100%' cellpadding='0' cellspacing='0' border='0'>
+								<tr>
+									<td width='80' valign='bottom'><img src="../images/admin/login/login-welcome.gif">&nbsp;&nbsp;</td>
+									<td width='100%' valign='bottom'>
+										<span class='tab-s'>Welcome to Sport admin console Platform</span><br>
+										<span class='install'>Please input your name and password to login.</span><br>
+										<img src="../images/admin/login/break-el.gif"  width='400' height='1' vspace='8'>
+									</td>
+								</tr>
+								<tr>
+									<td>&nbsp;</td>
+									<td>
+										<table cellpadding='0' cellspacing='0' border='0'>
+											
+											<tr height='24'>
+												<td colspan="2">
+									    		
+									    		</td>
+											</tr>
+											
+											<tr height='24'>
+												<td>ÓÃ»§Ãû&nbsp;</td>
+												<td>
+													<input type="text" name="username" TABINDEX="1" size=20 id="username"/>
+													<div class="Info">
+													  <div id=""username_info"></div>
+											       </div>
+												</td>
+											</tr>
+											<tr height='24'>
+												<td>ÃÜÂë:&nbsp;</td>
+												<td>
+													<input type="password" name="password" TABINDEX="2" size=20 id="password"/>
+												    <div class="Info">
+													  <div id="password_info"></div>
+											       	</div>
+												</td>
+											</tr>
+											<tr height='24'>
+												<td>&nbsp;</td>
+												<td>
+													<input class="submitButton" type="submit" TABINDEX="3" name="submit" value="submit">
+												    
+												</td>
+											</tr>
+										</table>
+									</td>
+								</tr>
+							</table>
+							</form>
+						</td>
+						<td width='40'>&nbsp;</td>
+					</tr>
+				</table>
+				<img src="../images/admin/login/break-el.gif"  height='1' width='100%' vspace='5'>
+				<table width='100%' border='0' cellspacing='0' cellpadding='0'>
+					<tr>
+						<td width='40'>&nbsp;</td>
+						<td></td>
+						<td width='40'>&nbsp;</td>
+					</tr>
+					<tr>
+						<td width='40' height='20'>&nbsp;</td>
+						<td height='20'>&nbsp;</td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+	</table>
+	
+  
+	</body>
+</html>

@@ -1,0 +1,181 @@
+
+<html>
+	<head>
+		<title>event_update</title>
+		<link rel="stylesheet" type="text/css" title="xp"
+			href="../css/skins/xp/validator/component.css" />
+		<link rel="stylesheet" type="text/css" title="xp"
+			href="../css/skins/xp/navbar/nav.css" />
+		<link rel="stylesheet" type="text/css" title="xp"
+			href="../css/skins/xp/table/skin.css" />
+		<link rel="stylesheet" type="text/css" title="xp"
+			href="../css/skins/xp/time/skin.css" />
+		<script type="text/javascript" src="../jscript/time/calendar.js"></script>
+		<script type="text/javascript" src="../jscript/time/calendar-zh.js"></script>
+		<script type="text/javascript" src="../jscript/time/calendar-setup.js"></script>
+		<script type="text/javascript" src="../jscript/common.js"></script>
+
+		<script type="text/javascript">
+		
+		function submitForm(obj) {	
+			if (document.forms[0].submit)	
+				document.forms[0].submit.disabled = true;		
+		}
+</script>
+		<style type="text/css">
+body,table,td,select,textarea,input {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+}
+</style>
+	</head>
+	<body>
+		<div id="main">
+
+
+			<form name="eventform" method="post" action=""
+				onSubmit='return submitForm(document.forms[0]);'>
+				<table class="standard">
+					<thead>
+						<tr>
+							<th align="left">
+								title
+							</th>
+							<th align="left">
+								value
+							</th>
+						</tr>
+					</thead>
+					<tbody>
+
+						<tr>
+							<td align="left">
+								name
+							</td>
+							<td align="left">
+								event.name
+
+								<div class="Info">
+									<div id="name_info"></div>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td align="left">
+								sport
+							</td>
+							<td align="left">
+								event.sport.name
+								<div class="Info">
+									<div id="sport_info"></div>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td align="left">
+								description
+							</td>
+							<td align="left">
+								event.description
+								<div class="Info">
+									<div id="description_info"></div>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td align="left">
+								start date
+							</td>
+							<td align="left">
+
+								yyyy-MM-dd HH:mm
+
+								<div class="Info">
+									<div id="start_info"></div>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td align="left">
+								end date
+							</td>
+							<td align="left">
+								yyyy-MM-dd HH:mm:ss
+
+								<div class="Info">
+									<div id="end_info"></div>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td align="left">
+								insert date
+							</td>
+							<td align="left">
+								yyyy-MM-dd HH:mm
+
+							</td>
+						</tr>
+						<tr>
+							<td align="left">
+								last modify date
+							</td>
+							<td align="left">
+								yyyy-MM-dd HH:mm
+
+							</td>
+						</tr>
+						<tr>
+							<td align="left">
+								language
+							</td>
+							<td align="left">
+								event.language
+								<div class="Info">
+									<div id="language_info"></div>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td align="left">
+								valid
+							</td>
+							<td align="left">
+								event.valid
+								<div class="Info">
+									<div id="valid_info"></div>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td align="left">
+								type
+							</td>
+							<td align="left">
+								event.type
+								<div class="Info">
+									<div id="type_info"></div>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td colspan="2" align="center">
+								<input class="submitButton" type="submit" TABINDEX="8"
+									name="submit" value="delete">
+								<input class="submitButton" type="button" name="back"
+									value="back" onclick="history.back(-1);" />
+							</td>
+						</tr>
+
+					</tbody>
+					<tfoot>
+						<tr>
+							<td colspan="2" style="text-align: left"></td>
+
+						</tr>
+					</tfoot>
+				</table>
+			</form>
+		</div>
+	</body>
+</html>

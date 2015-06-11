@@ -1,0 +1,167 @@
+<html>
+<head>
+<title>match_delete</title>
+		<link rel="stylesheet" type="text/css" title="xp"
+			href="../css/skins/xp/validator/component.css" />
+		<link rel="stylesheet" type="text/css" title="xp"
+			href="../css/skins/xp/navbar/nav.css" />
+		<link rel="stylesheet" type="text/css" title="xp"
+			href="../css/skins/xp/table/skin.css" />
+		<link rel="stylesheet" type="text/css" title="xp"
+			href="../css/skins/xp/time/skin.css" />
+		<script type="text/javascript" src="../jscript/time/calendar.js"></script>
+		<script type="text/javascript" src="../jscript/time/calendar-zh.js"></script>
+		<script type="text/javascript" src="../jscript/time/calendar-setup.js"></script>
+		<script type="text/javascript" src="../jscript/common.js"></script>
+<script type="text/javascript">
+			function submitForm(obj) {	
+		
+				if (document.forms[0].submit) 		
+					document.forms[0].submit.disabled = true;		
+		
+		}
+</script>
+<style type="text/css">
+body,table,td,select,textarea,input {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+}
+</style>
+</head>
+<body>
+<div id="main">
+
+
+<form name="eventform" method="post"
+	action="../admin/pmatch.do?method=deleted"
+	onSubmit='return submitForm(document.forms[0]);'>
+<table class="standard">
+	<thead>
+		<tr>
+			<th align="left">title</th>
+			<th align="left">value</th>
+		</tr>
+	</thead>
+	<tbody>
+
+		<tr>
+			<td align="left">name</td>
+			<td align="left">match.name
+				
+			<div class="Info">
+			<div id="name_info"></div>
+			</div>
+			</td>
+		</tr>
+		<tr>
+			<td align="left">description</td>
+			<td align="left">pmatch.description
+				
+			<div class="Info">
+			<div id="description_info"></div>
+			</div>
+			</td>
+		</tr>
+
+		<tr>
+			<td align="left">event1</td>
+			<td align="left">
+			pmatch.event.name
+			<div class="Info">
+			<div id="event1_info"></dive></div>
+			</td>
+		</tr>
+
+		<tr>
+			<td align="left">match start date</td>
+			<td align="left">
+			yyyy-MM-dd HH:mm:ss
+			
+			<div class="Info">
+			<div id="start_info"></div>
+			</div>
+			</td>
+		</tr>
+		<tr>
+			<td align="left">match end date</td>
+			<td align="left">
+				yyyy-MM-dd HH:mm
+			
+			<div class="Info">
+			<div id="end_info"></div>
+			</div>
+			</td>
+		</tr>
+		<tr>
+			<td align="left">insert date</td>
+			<td align="left">
+			yyyy-MM-dd HH:mm
+			</td>
+		</tr>
+		<tr>
+			<td align="left">last modify date</td>
+			
+		 	<td align="left">yyyy-MM-dd HH:mm
+			
+			</td>
+		</tr>		
+		
+		<tr>
+			<td align="left">language</td>
+			<td align="left">pmatch.language
+			<div class="Info">
+			<div id="language_info"></div>
+			</div>
+			</td>
+		</tr>
+		<tr>
+			<td align="left">versus1</td>
+			<td align="left">pmatch.versus1.name
+				
+			<div class="Info">
+			<div id="versus1_info"></div>
+			</div>
+			</td>
+		</tr>
+		<tr>
+			<td align="left">versus2</td>
+			<td align="left">pmatch.versus2.name
+			<div class="Info">
+			<div id="versus2_info"></div>
+			</div>
+			</td>
+		</tr>
+		<tr>
+			<td align="left">history</td>
+			<td align="left">pmatch.history
+			<div class="Info">
+			<div id="history_info"></div>
+			</div>
+			</td>
+		</tr>
+		<tr>
+			<td align="left">valid</td>
+			<td align="left">pmatch.valid
+			<div class="Info">
+			<div id="valid_info"></div>
+			</div>
+			</td>
+		</tr>		<tr>
+			<td colspan="2" align="center"><input class="submitButton"
+				type="submit" TABINDEX="11" name="submit" value="delete">
+				<input class="submitButton" type="button" name="back"   value="back" onclick="history.back(-1);"/>
+				</td>
+		</tr>
+
+	</tbody>
+	<tfoot>
+		<tr>
+			<td colspan="2" style="text-align: left"></td>
+
+		</tr>
+	</tfoot>
+</table>
+</form>
+</div>
+</body>
+</html>

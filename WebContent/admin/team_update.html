@@ -1,0 +1,136 @@
+
+<html>
+<head>
+<title>参赛队修改</title>
+		<link rel="stylesheet" type="text/css" title="xp"
+			href="../css/skins/xp/validator/component.css" />
+		<link rel="stylesheet" type="text/css" title="xp"
+			href="../css/skins/xp/navbar/nav.css" />
+		<link rel="stylesheet" type="text/css" title="xp"
+			href="../css/skins/xp/table/skin.css" />
+		<link rel="stylesheet" type="text/css" title="xp"
+			href="../css/skins/xp/time/skin.css" />
+		<script type="text/javascript" src="../jscript/time/calendar.js"></script>
+		<script type="text/javascript" src="../jscript/time/calendar-zh.js"></script>
+		<script type="text/javascript" src="../jscript/time/calendar-setup.js"></script>
+		<script type="text/javascript" src="../jscript/common.js"></script>
+
+<script type="text/javascript">
+		var validatedInfo		= "correct";
+		var requireErrorInfo	= "required<br/>";
+		var msgInfo	= new Array();
+		
+		msgInfo[0]				= new Array('name required','name error');
+		var name				= new formEle(true,"no",null,"name_info",msgInfo[0]);
+		
+		msgInfo[0]				= new Array('ticon required','ticon error');
+		var ticon				= new formEle(true,"no",null,"ticon_info",msgInfo[0]);
+		
+		msgInfo[0]				= new Array('hist required','hist error');
+		var hist				= new formEle(true,"no",null,"hist_info",msgInfo[0]);
+	
+		
+		msgInfo[0]				= new Array('ftime required','ftime error');
+	    var ftime				= new formEle(true,"no",null,"ftime_info",msgInfo[0]);		
+	    
+		msgInfo[0]				= new Array('teamtype required','teamtype error');
+	    var type				= new formEle(true,"num",null,"teamtype_info",msgInfo[0]);		
+	    
+
+		msgInfo[0]				= new Array('valid required','valid error');
+	    var valid				= new formEle(true,"num",null,"valid_info",msgInfo[0]);		
+	    	
+		msgInfo[0]				= new Array('nation required','nation error');
+	    var nation			    = new formEle(true,"no",null,"nation_info",msgInfo[0]);
+	    
+		msgInfo[0]				= new Array('nicon required','nicon error');
+	    var nicon			        = new formEle(true,"no",null,"nicon_info",msgInfo[0]);
+	    
+		msgInfo[0]				= new Array('language required','language error');
+	    var language			        = new formEle(true,"no",null,"language_info",msgInfo[0]);
+	    	
+	    
+		
+		function submitForm(obj) {	
+		
+			var ret = validateAll(obj);			
+			if (ret == true) {		 
+				if (document.forms[0].submit) {		
+					document.forms[0].submit.disabled = true;		
+				}		
+			}		
+			return ret;		
+		}
+</script>
+<style type="text/css">
+body,table,td,select,textarea,input {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+}
+</style>
+</head>
+<body>
+<div id="main">
+
+
+<form name="adform" method="post"
+	action="../admin/team.do?method=added"
+	onSubmit='return submitForm(document.forms[0]);'>
+<table class="standard">
+					<thead>
+						<tr>
+							<th align="center" colspan="2">
+								参赛队修改
+							</th>
+						</tr>
+					</thead>
+	<tbody>
+
+		<tr>
+			<td align="left">参赛队名</td>
+			<td align="left"><input name="name" type="text" TABINDEX="1"
+				id="name" />
+			<div class="Info">
+			<div id="name_info"></div>
+			</div>
+			</td>
+		</tr>
+
+
+
+		<tr>
+			<td align="left">国籍</td>
+			<td align="left"><input name="teamtype" type="text"   value=""
+				TABINDEX="6" id="type" />
+			<div class="Info">
+			<div id="teamtype_info"></div>
+			</div>
+			</td>
+		</tr>
+		<tr>
+			<td align="left">简介</td>
+			<td align="left"><input name="valid" type="text"   value=""
+				TABINDEX="7" id="valid" />
+			<div class="Info">
+			<div id="valid_info"></div>
+			</div>
+			</td>
+		</tr>
+
+		<tr>
+			<td colspan="2" align="center"><input class="submitButton"
+				type="submit" TABINDEX="11" name="submit" value="提交"></td>
+		</tr>
+
+	</tbody>
+	<tfoot>
+		<tr>
+			<td colspan="2" style="text-align: left">&nbsp;</td>
+
+		</tr>
+	</tfoot>
+</table>
+</form>
+</div>
+</body>
+</html>

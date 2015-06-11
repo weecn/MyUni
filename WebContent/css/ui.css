@@ -1,0 +1,309 @@
+/**
+* General CSS Usage
+* @version 0.1: ui.css,2006/03/30 EddiSheng Exp $
+* @package SelfCare
+*/
+/*--------------------------*/
+/*------Body Elements-------*/
+/*--------------------------*/
+body { 
+	color            : #123456;
+	background-color : #FFF;
+	font-family      : Arial, Helvetica, sans-serif, "ËÎÌו";
+	font-size        : 12px;
+}
+#main{
+	border: 1px solid #d5d5d5;
+	width: 98%;
+}
+#content-body { 
+	background-color: #fff;
+	position: absolute;
+	color: #000;
+	padding: 10px 20px;
+}
+table.adminheading {
+	background-color: #FFF;
+	font-family : Arial, Helvetica, sans-serif;
+	margin: 0px;
+	padding: 0px;
+	border: 0px;
+	width: 100%;
+	border-collapse: collapse;
+	color: #FF9E31;
+	font-size : 18px;
+	font-weight: bold;
+	text-align: left;
+}
+table.adminheading th {
+	width: 99%;
+	height: 50px;
+	padding-left: 50px;
+	background: url(../images/asterisk.png) no-repeat left;
+}
+table.adminheading th.config {
+	background: url(../images/config.png) no-repeat left;
+}
+table.sadminheading {
+	background-color: #FFF;
+	font-family : Arial, Helvetica, sans-serif;
+	margin: 0px;
+	padding: 0px;
+	border: 0px;
+	width: 100%;
+	border-collapse: collapse;
+	color: #FF9E31;
+	font-size : 12px;
+	font-weight: bold;
+	text-align: left;
+}
+table.sadminheading th {
+	width: 99%;
+	height: 50px;
+	padding-left: 50px;
+	background: url(../images/asterisk.png) no-repeat left;
+}
+table.sadminheading th.config {
+	background: url(../images/config.png) no-repeat left;
+}
+/*--------------------------*/
+/*-------Form Elements------*/
+/*--------------------------*/
+FORM {
+    margin: 0px;
+}
+BUTTON {
+    padding: 2px 2px 0px 2px;
+    border: #7EBF4F 1px solid;
+    FILTER: FILTER:  progid:DXImageTransform.Microsoft.gradient (GradientType=0, startColorstr=#ffffff, endColorstr=#B3D997); 
+    CURSOR: pointer;
+}
+BUTTON, .submitButton {
+    height: 22px;
+    font-size: 12px;
+    border: 1px solid #2c59aa;
+    padding: 0px;
+    cursor: pointer;
+    color: black;
+    background-color: #ffffff;
+    FILTER: progid:DXImageTransform.Microsoft.Gradient( GradientType = 0, StartColorStr = #ffffff, EndColorStr = #C3DAF5 );
+    
+}
+INPUT {
+    font-size: 12px;
+    color: #336699;
+    border: 1px solid #9e9e9e;
+}
+TEXTAREA {
+    font-size: 12px;
+    color: #336699;
+    border: 1px solid #9e9e9e;
+}
+SELECT {
+    font-size: 12px;
+    color: #336699;
+    border: 1px solid #9e9e9e;
+}
+a {
+	color: #00008B;
+	text-decoration: none;
+}
+A:link, a:visited {
+    color: #336699;
+    text-decoration: none
+}
+a:hover {
+	color : #808080;
+	text-decoration : underline;
+}
+a:active {
+	color : #FF9900;
+	text-decoration : underline;
+}
+a.toolbar {
+	color : #808080;
+	text-decoration : none;
+}
+a.toolbar:hover {
+	color : #FF9900;
+}
+a.toolbar:active {
+	color : #FF9900;
+}
+
+/*--------------------------*/
+/*------Font Elements-------*/
+/*--------------------------*/
+.small {
+	color : #FF9900;
+	font-family : Arial, Helvetica, sans-serif;
+	font-size : 10px;
+	text-decoration : none;
+}
+.smallgrey {
+	color : #999;
+	font-size : 10px;
+}
+.error {
+	color : #C40000;
+	font-size : 11px;
+	font-weight : bold;
+}
+.message {
+    font-weight: bold;
+    background: transparent;
+    color: red;
+}
+
+/*--------------------------*/
+/*------Navbar Elements-----*/
+/*--------------------------*/
+
+.menuholder {
+  background-color: #669;
+  color: #eef;
+  position: relative;
+  left: 0px;
+  top: 0px;
+  overflow: hidden;
+  width: 160px;
+  z-index: 100;
+}
+
+.menubar {
+  position: relative;
+  font: 11px Tahoma,Verdana,sans-serif;
+  cursor: default;
+}
+
+.menubar a, .menubar a:visited { color: #fe4; }
+.menubar a:hover { color: #f80; }
+
+.menubar .control {
+  font-weight: bold;
+  padding: 0px; margin: 0px; border: 0px;
+  border-collapse: collapse;
+  background-color: #190;
+}
+
+.menubar .control td { padding: 1px; margin: 0px; border: 0px; }
+.menubar .control td.hilite { background-color: #6d5; }
+
+.menubar .control .button { float: left; }
+.menubar .control .button-right { float: right; }
+
+.menubar .space { margin-bottom: 3px; }
+
+.menubar .title {
+  margin: 0px auto;
+  font: bold 120% Georgia,serif;
+  -moz-border-radius: 0px 0px 4px 4px;
+  border: 1px solid #000;
+  width: 96%;
+  letter-spacing: 1px;
+  background-color: #88b;
+  color: #000;
+}
+
+.menubar .title td { margin: 0px; padding: 0px 5px; border: none; }
+
+.menubar .title .img { float: right; width: 12px; height: 12px; -moz-opacity: 0.6; opacity: 0.6; }
+
+.menubar .title-hilite .img { -moz-opacity: 1; opacity: 1; }
+
+.menubar .title-hilite { background-color: #447; color: #fff; }
+
+.menubar .section {
+  position: relative;
+  width: 92%;
+  margin: 0px auto;
+  overflow: hidden;
+}
+
+.menubar .section .body {
+  background-color: #aad;
+  -moz-border-radius: 0px 0px 4px 4px;
+  padding: 5px;
+  border: 1px solid #000;
+  border-top: none;
+}
+
+.menubar .section .body-hilite { background-color: #fff; }
+
+.menubar .section .body table {
+  font-size: 100%;
+  width: 100%;
+  border-collapse: collapse;
+  border: none;
+}
+
+.menubar .section .body table tr.separator td div,
+.menubar .section .body div.separator {
+  font-size: 1px;
+  height: 1px;
+  overflow: hidden;
+  margin: 4px 2px;
+  border-bottom: 1px dashed #77a;
+}
+
+.menubar .section .body .item,
+.menubar .section .body .item td {
+  color: #000;
+  cursor: pointer;
+  padding: 0px;
+  margin: 0px;
+}
+
+.menubar .section .body .item .image {
+  width: 20px;
+  text-align: center;
+  vertical-align: top;
+  font-weight: bold;
+}
+
+.menubar .section .body .item .image .img {
+  border: none;
+  padding: 0px;
+  margin: 0px;
+}
+
+.menubar .section .body .item {
+  text-decoration: none;
+}
+
+.menubar .section .body .item .link {
+  padding: 1px 1px 1px 4px;
+  -moz-border-radius: 3px;
+}
+
+.menubar .section .body .item-hilite .link {
+  padding: 0px 0px 0px 3px;
+  border: 1px solid #00f;
+  background-color: #88b;
+  color: #fff;
+}
+
+.menubar .section .body .item-hilite .image {
+  -moz-opacity: 1;
+  opacity: 1;
+  filter: none;
+  color: #f00;
+}
+
+.menubar .section .body .item-disabled .link {
+  background-color: #ddd;
+}
+.menubar .section .body .item-disabled .image {
+  filter: none;
+  -moz-opacity: 1;
+  opacity: 1;
+}
+
+.menubar .section .body .toggle-tab {
+  width: 14px;
+  vertical-align: top;
+}
+
+.menubar .section .body .toggle-tab-body {
+  vertical-align: top;
+}

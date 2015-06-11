@@ -1,0 +1,139 @@
+<%@include file="/jsp/common_taglibs.jsp"%>
+<html>
+<head>
+<title>sport_delete</title>
+		<link rel="stylesheet" type="text/css" title="xp"
+			href="../css/skins/xp/validator/component.css" />
+		<link rel="stylesheet" type="text/css" title="xp"
+			href="../css/skins/xp/navbar/nav.css" />
+		<link rel="stylesheet" type="text/css" title="xp"
+			href="../css/skins/xp/table/skin.css" />
+		<link rel="stylesheet" type="text/css" title="xp"
+			href="../css/skins/xp/time/skin.css" />
+		<script type="text/javascript" src="../jscript/time/calendar.js"></script>
+		<script type="text/javascript" src="../jscript/time/calendar-zh.js"></script>
+		<script type="text/javascript" src="../jscript/time/calendar-setup.js"></script>
+		<script type="text/javascript" src="../jscript/common.js"></script>
+
+<script type="text/javascript">
+		function submitForm(obj) {	
+			if (document.forms[0].submit) 		
+			  document.forms[0].submit.disabled = true;		
+		}
+</script>
+<style type="text/css">
+body,table,td,select,textarea,input {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+}
+</style>
+</head>
+<body>
+<div id="main">
+
+
+<form name="sportform" method="post"
+	action="../admin/sport.do?method=deleted"
+	onSubmit='return submitForm(document.forms[0]);'>
+<table class="standard">
+	<thead>
+		<tr>
+			<th align="left">title</th>
+			<th align="left">value</th>
+		</tr>
+	</thead>
+	<tbody>
+
+		<tr>
+			<td align="left">name</td>
+			<td align="left"><c:out value="${sport.name}"/>
+			<div class="Info">
+			<div id="name_info"></div>
+			</div>
+			</td>
+		</tr>
+		<tr>
+			<td align="left">type</td>
+			<td align="left"><c:out value="${sport.type}"/>
+			<div class="Info">
+			<div id="type_info"></dive></div>
+			</td>
+		</tr>
+		<tr>
+			<td align="left">description</td>
+			<td align="left"><c:out value="${sport.description}"/>
+			<div class="Info">
+			<div id="description_info"></div>
+			</div>
+			</td>
+		</tr>
+		<tr>
+			<td align="left">idate</td>
+			<td align="left">
+			<fmt:parseDate var="dat1" pattern="yyyy-MM-dd HH:mm:ss" value="${sport.idate}" />
+			<fmt:formatDate pattern="yyyy-MM-dd HH:mm" value="${dat1}" />
+			
+			<div class="Info">
+			<div id="start_info"></div>
+			</div>
+			</td>
+		</tr>
+		<tr>
+			<td align="left">mdate</td>
+			<td align="left">
+			<fmt:parseDate var="dat2" pattern="yyyy-MM-dd HH:mm:ss" value="${btool.mdate}" />
+			<fmt:formatDate pattern="yyyy-MM-dd HH:mm" value="${dat2}" />
+		<div class="Info">
+			<div id="end_info"></div>
+			</div>
+			</td>
+		</tr>
+		<tr>
+			<td align="left">language</td>
+			<td align="left"><c:out value="${sport.language}"/>
+			<div class="Info">
+			<div id="language_info"></div>
+			</div>
+			</td>
+		</tr>
+		<tr>
+			<td align="left">valid</td>
+			<td align="left"><c:out value="${sport.valid}"/>
+			<div class="Info">
+			<div id="valid_info"></dive></div>
+			</td>
+		</tr>
+		<tr>
+			<td align="left">prior</td>
+			<td align="left"><c:out value="${sport.prior}"/>
+			<div class="Info">
+			<div id="prior_info"></dive></div>
+			</td>
+		</tr>	
+		
+		<tr>
+			<td align="left">icon</td>
+			<td align="left"><c:out value="${icon.prior}"/>
+			<div class="Info">
+			<div id="icon_info"></dive></div>
+			</td>
+		</tr>						
+		<tr>
+			<td colspan="2" align="center"><input class="submitButton"
+				type="submit" TABINDEX="9" name="submit" value="delete">
+				<input class="submitButton" type="button" name="back"   value="back" onclick="history.back(-1);"/>
+				</td>
+		</tr>
+
+	</tbody>
+	<tfoot>
+		<tr>
+			<td colspan="2" style="text-align: left"></td>
+
+		</tr>
+	</tfoot>
+</table>
+</form>
+</div>
+</body>
+</html>
